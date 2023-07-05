@@ -20,8 +20,8 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 def tokenize_function(example):
     start_prompt = (f"Below is an instruction that describes a task. "
             f"Write a response that appropriately completes the request.\n\n"
-            f"### Instruction:\n'
-    end_prompt = f"\n\n### Response: ")
+            f"### Instruction:\n'")
+    end_prompt = (f"\n\n### Response: ")
     prompt = [start_prompt + instruction + end_prompt for instruction in example["instruction"]]
     example['input_ids'] = tokenizer(prompt, padding="max_length", truncation=True, return_tensors="pt").input_ids
     example['labels'] = tokenizer(example["output"], padding="max_length", truncation=True, return_tensors="pt").input_ids
