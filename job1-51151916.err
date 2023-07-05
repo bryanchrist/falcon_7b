@@ -1,0 +1,22 @@
+  Running command git clone --quiet https://github.com/huggingface/transformers.git /tmp/pip-install-a782ks9m/transformers_82f66830f9a4430f872df1cc7ad45731
+  Running command git clone --quiet https://github.com/huggingface/peft.git /tmp/pip-install-a782ks9m/peft_66529d84141749329fff8862f96df321
+  Running command git clone --quiet https://github.com/huggingface/accelerate.git /tmp/pip-install-a782ks9m/accelerate_fe87ab6231bc48c196d361272412c406
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so'), PosixPath('/home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/configuration_utils.py:483: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/modeling_utils.py:2192: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s]Loading checkpoint shards:  11%|█         | 1/9 [00:08<01:05,  8.22s/it]Loading checkpoint shards:  22%|██▏       | 2/9 [00:15<00:55,  7.94s/it]Loading checkpoint shards:  33%|███▎      | 3/9 [00:27<00:56,  9.45s/it]Loading checkpoint shards:  44%|████▍     | 4/9 [00:34<00:42,  8.48s/it]Loading checkpoint shards:  56%|█████▌    | 5/9 [00:42<00:34,  8.55s/it]Loading checkpoint shards:  67%|██████▋   | 6/9 [00:49<00:24,  8.02s/it]Loading checkpoint shards:  78%|███████▊  | 7/9 [00:57<00:15,  7.95s/it]Loading checkpoint shards:  89%|████████▉ | 8/9 [01:05<00:07,  7.90s/it]Loading checkpoint shards: 100%|██████████| 9/9 [01:13<00:00,  7.79s/it]Loading checkpoint shards: 100%|██████████| 9/9 [01:13<00:00,  8.11s/it]
+Traceback (most recent call last):
+  File "/gpfs/gpfs0/project/SDS/research/christ_research/falcon/qlora/qlora.py", line 807, in <module>
+    train()
+  File "/gpfs/gpfs0/project/SDS/research/christ_research/falcon/qlora/qlora.py", line 678, in train
+    data_module = make_data_module(tokenizer=tokenizer, args=args)
+  File "/gpfs/gpfs0/project/SDS/research/christ_research/falcon/qlora/qlora.py", line 576, in make_data_module
+    dataset = load_data(args.dataset)
+  File "/gpfs/gpfs0/project/SDS/research/christ_research/falcon/qlora/qlora.py", line 540, in load_data
+    raise NotImplementedError(f"Dataset {dataset_name} not implemented yet.")
+NotImplementedError: Dataset = not implemented yet.

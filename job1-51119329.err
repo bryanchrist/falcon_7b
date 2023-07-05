@@ -1,0 +1,28 @@
+  Running command git clone --quiet https://github.com/huggingface/transformers.git /tmp/pip-install-bmnrsnp5/transformers_4d73ee1afa32422ca126ad380c4e24c4
+  Running command git clone --quiet https://github.com/huggingface/peft.git /tmp/pip-install-bmnrsnp5/peft_162312432a984a699f173ad6aa2c2c80
+  Running command git clone --quiet https://github.com/huggingface/accelerate.git /tmp/pip-install-bmnrsnp5/accelerate_cd7448be5da3477ba07612c3915531de
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: /home/brc4cb/.conda/envs/falcon_40B did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+Traceback (most recent call last):
+  File "/gpfs/gpfs0/project/SDS/research/christ_research/falcon/qlora/qlora.py", line 15, in <module>
+    import bitsandbytes as bnb
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/__init__.py", line 6, in <module>
+    from . import cuda_setup, utils, research
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/research/__init__.py", line 1, in <module>
+    from . import nn
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/research/nn/__init__.py", line 1, in <module>
+    from .modules import LinearFP8Mixed, LinearFP8Global
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/research/nn/modules.py", line 8, in <module>
+    from bitsandbytes.optim import GlobalOptimManager
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/optim/__init__.py", line 6, in <module>
+    from bitsandbytes.cextension import COMPILED_WITH_CUDA
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/cextension.py", line 20, in <module>
+    raise RuntimeError('''
+RuntimeError: 
+        CUDA Setup failed despite GPU being available. Please run the following command to get more information:
+
+        python -m bitsandbytes
+
+        Inspect the output of the command and see if you can locate CUDA libraries. You might need to add them
+        to your LD_LIBRARY_PATH. If you suspect a bug, please take the information from python -m bitsandbytes
+        and open an issue at: https://github.com/TimDettmers/bitsandbytes/issues

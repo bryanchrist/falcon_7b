@@ -1,0 +1,174 @@
+Collecting transformers@ git+https://github.com/huggingface/transformers.git (from -r requirements.txt (line 2))
+  Cloning https://github.com/huggingface/transformers.git to /tmp/pip-install-bmnrsnp5/transformers_4d73ee1afa32422ca126ad380c4e24c4
+  Resolved https://github.com/huggingface/transformers.git to commit 68c92981ff2b804979d2e6107eeefe298d1e5183
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting peft@ git+https://github.com/huggingface/peft.git (from -r requirements.txt (line 3))
+  Cloning https://github.com/huggingface/peft.git to /tmp/pip-install-bmnrsnp5/peft_162312432a984a699f173ad6aa2c2c80
+  Resolved https://github.com/huggingface/peft.git to commit e2b8e3260d3eeb736edf21a2424e89fe3ecf429d
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting accelerate@ git+https://github.com/huggingface/accelerate.git (from -r requirements.txt (line 4))
+  Cloning https://github.com/huggingface/accelerate.git to /tmp/pip-install-bmnrsnp5/accelerate_cd7448be5da3477ba07612c3915531de
+  Resolved https://github.com/huggingface/accelerate.git to commit 5791d949ff93733c102461ba89c8310745a3fa79
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting bitsandbytes==0.39.0 (from -r requirements.txt (line 1))
+  Downloading bitsandbytes-0.39.0-py3-none-any.whl (92.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.2/92.2 MB 19.7 MB/s eta 0:00:00
+Collecting einops==0.6.1 (from -r requirements.txt (line 5))
+  Using cached einops-0.6.1-py3-none-any.whl (42 kB)
+Collecting evaluate==0.4.0 (from -r requirements.txt (line 6))
+  Using cached evaluate-0.4.0-py3-none-any.whl (81 kB)
+Collecting scikit-learn==1.2.2 (from -r requirements.txt (line 7))
+  Downloading scikit_learn-1.2.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (9.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.6/9.6 MB 81.8 MB/s eta 0:00:00
+Collecting scipy (from -r requirements.txt (line 8))
+  Downloading scipy-1.11.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (36.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 36.5/36.5 MB 44.5 MB/s eta 0:00:00
+Collecting sentencepiece==0.1.99 (from -r requirements.txt (line 9))
+  Downloading sentencepiece-0.1.99-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 42.5 MB/s eta 0:00:00
+Collecting wandb==0.15.3 (from -r requirements.txt (line 10))
+  Using cached wandb-0.15.3-py3-none-any.whl (2.0 MB)
+Requirement already satisfied: datasets>=2.0.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (2.13.1)
+Requirement already satisfied: numpy>=1.17 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (1.25.0)
+Requirement already satisfied: dill in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (0.3.6)
+Requirement already satisfied: pandas in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (2.0.2)
+Requirement already satisfied: requests>=2.19.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (2.31.0)
+Requirement already satisfied: tqdm>=4.62.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (4.65.0)
+Requirement already satisfied: xxhash in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (3.2.0)
+Requirement already satisfied: multiprocess in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (0.70.14)
+Requirement already satisfied: fsspec[http]>=2021.05.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (2023.4.0)
+Requirement already satisfied: huggingface-hub>=0.7.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (0.15.1)
+Requirement already satisfied: packaging in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (23.1)
+Collecting responses<0.19 (from evaluate==0.4.0->-r requirements.txt (line 6))
+  Using cached responses-0.18.0-py3-none-any.whl (38 kB)
+Collecting joblib>=1.1.1 (from scikit-learn==1.2.2->-r requirements.txt (line 7))
+  Using cached joblib-1.2.0-py3-none-any.whl (297 kB)
+Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.2.2->-r requirements.txt (line 7))
+  Downloading threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
+Requirement already satisfied: Click!=8.0.0,>=7.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (8.1.3)
+Collecting GitPython!=3.1.29,>=1.0.0 (from wandb==0.15.3->-r requirements.txt (line 10))
+  Using cached GitPython-3.1.31-py3-none-any.whl (184 kB)
+Requirement already satisfied: psutil>=5.0.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (5.9.5)
+Collecting sentry-sdk>=1.0.0 (from wandb==0.15.3->-r requirements.txt (line 10))
+  Using cached sentry_sdk-1.26.0-py2.py3-none-any.whl (209 kB)
+Collecting docker-pycreds>=0.4.0 (from wandb==0.15.3->-r requirements.txt (line 10))
+  Using cached docker_pycreds-0.4.0-py2.py3-none-any.whl (9.0 kB)
+Requirement already satisfied: PyYAML in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (6.0)
+Collecting pathtools (from wandb==0.15.3->-r requirements.txt (line 10))
+  Downloading pathtools-0.1.2.tar.gz (11 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting setproctitle (from wandb==0.15.3->-r requirements.txt (line 10))
+  Downloading setproctitle-1.3.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (30 kB)
+Requirement already satisfied: setuptools in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (67.8.0)
+Collecting appdirs>=1.4.3 (from wandb==0.15.3->-r requirements.txt (line 10))
+  Using cached appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Requirement already satisfied: typing-extensions in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (4.4.0)
+Collecting protobuf!=4.21.0,<5,>=3.15.0 (from wandb==0.15.3->-r requirements.txt (line 10))
+  Using cached protobuf-4.23.3-cp37-abi3-manylinux2014_x86_64.whl (304 kB)
+Requirement already satisfied: filelock in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (3.9.0)
+Collecting regex!=2019.12.17 (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2))
+  Downloading regex-2023.6.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (769 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 769.9/769.9 kB 26.8 MB/s eta 0:00:00
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (0.13.3)
+Collecting safetensors>=0.3.1 (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2))
+  Downloading safetensors-0.3.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 40.4 MB/s eta 0:00:00
+Requirement already satisfied: torch>=1.13.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (2.1.0.dev20230624+cu118)
+Requirement already satisfied: pyarrow>=8.0.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (12.0.1)
+Requirement already satisfied: aiohttp in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (3.8.4)
+Requirement already satisfied: six>=1.4.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from docker-pycreds>=0.4.0->wandb==0.15.3->-r requirements.txt (line 10)) (1.16.0)
+Collecting gitdb<5,>=4.0.1 (from GitPython!=3.1.29,>=1.0.0->wandb==0.15.3->-r requirements.txt (line 10))
+  Using cached gitdb-4.0.10-py3-none-any.whl (62 kB)
+Requirement already satisfied: charset-normalizer<4,>=2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests>=2.19.0->evaluate==0.4.0->-r requirements.txt (line 6)) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests>=2.19.0->evaluate==0.4.0->-r requirements.txt (line 6)) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests>=2.19.0->evaluate==0.4.0->-r requirements.txt (line 6)) (2.0.3)
+Requirement already satisfied: certifi>=2017.4.17 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests>=2.19.0->evaluate==0.4.0->-r requirements.txt (line 6)) (2023.5.7)
+Requirement already satisfied: sympy in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (1.11.1)
+Requirement already satisfied: networkx in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (3.0rc1)
+Requirement already satisfied: jinja2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (3.1.2)
+Requirement already satisfied: pytorch-triton==2.1.0+440fd1bf20 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (2.1.0+440fd1bf20)
+Requirement already satisfied: python-dateutil>=2.8.2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from pandas->evaluate==0.4.0->-r requirements.txt (line 6)) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from pandas->evaluate==0.4.0->-r requirements.txt (line 6)) (2023.3)
+Requirement already satisfied: tzdata>=2022.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from pandas->evaluate==0.4.0->-r requirements.txt (line 6)) (2023.3)
+Requirement already satisfied: attrs>=17.3.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (23.1.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (6.0.4)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (4.0.2)
+Requirement already satisfied: yarl<2.0,>=1.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (1.9.2)
+Requirement already satisfied: frozenlist>=1.1.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (1.3.3)
+Requirement already satisfied: aiosignal>=1.1.2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (1.3.1)
+Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython!=3.1.29,>=1.0.0->wandb==0.15.3->-r requirements.txt (line 10))
+  Using cached smmap-5.0.0-py3-none-any.whl (24 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from jinja2->torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (2.1.2)
+Requirement already satisfied: mpmath>=0.19 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from sympy->torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (1.2.1)
+Building wheels for collected packages: transformers, peft, accelerate, pathtools
+  Building wheel for transformers (pyproject.toml): started
+  Building wheel for transformers (pyproject.toml): finished with status 'done'
+  Created wheel for transformers: filename=transformers-4.31.0.dev0-py3-none-any.whl size=7233702 sha256=a656300d125620fd26e3fd1e855ffbf7a852518a1f1ff05ba79abadbea329308
+  Stored in directory: /tmp/pip-ephem-wheel-cache-9zndxyvk/wheels/f7/92/8c/752ff3bfcd3439805d8bbf641614da38ef3226e127ebea86ee
+  Building wheel for peft (pyproject.toml): started
+  Building wheel for peft (pyproject.toml): finished with status 'done'
+  Created wheel for peft: filename=peft-0.4.0.dev0-py3-none-any.whl size=61828 sha256=3ddf0a4c8e16e3d22c669e52f06aebe5ac39938f1bf70b0603da5d8e00a6ecde
+  Stored in directory: /tmp/pip-ephem-wheel-cache-9zndxyvk/wheels/2d/60/1b/0edd9dc0f0c489738b1166bc1b0b560ee368f7721f89d06e3a
+  Building wheel for accelerate (pyproject.toml): started
+  Building wheel for accelerate (pyproject.toml): finished with status 'done'
+  Created wheel for accelerate: filename=accelerate-0.21.0.dev0-py3-none-any.whl size=231525 sha256=07650748be9ed609b2bb4a34b5f90a026d90ba5e3b0b094d6665036a53055df3
+  Stored in directory: /tmp/pip-ephem-wheel-cache-9zndxyvk/wheels/60/53/1d/f8f7d9ed24f2b70cf9b37ecd31318a274049263effcc4b5bf3
+  Building wheel for pathtools (setup.py): started
+  Building wheel for pathtools (setup.py): finished with status 'done'
+  Created wheel for pathtools: filename=pathtools-0.1.2-py3-none-any.whl size=8791 sha256=9ffcd411b240523b5eed05b4e126952869ccd6858abaa45229d18d166c75cffd
+  Stored in directory: /sfs/qumulo/qhome/brc4cb/.cache/pip/wheels/b7/0a/67/ada2a22079218c75a88361c0782855cc72aebc4d18d0289d05
+Successfully built transformers peft accelerate pathtools
+Installing collected packages: sentencepiece, safetensors, pathtools, bitsandbytes, appdirs, threadpoolctl, smmap, setproctitle, sentry-sdk, scipy, regex, protobuf, joblib, einops, docker-pycreds, scikit-learn, responses, gitdb, transformers, GitPython, accelerate, wandb, peft, evaluate
+  Attempting uninstall: bitsandbytes
+    Found existing installation: bitsandbytes 0.39.1
+    Uninstalling bitsandbytes-0.39.1:
+      Successfully uninstalled bitsandbytes-0.39.1
+Successfully installed GitPython-3.1.31 accelerate-0.21.0.dev0 appdirs-1.4.4 bitsandbytes-0.39.0 docker-pycreds-0.4.0 einops-0.6.1 evaluate-0.4.0 gitdb-4.0.10 joblib-1.2.0 pathtools-0.1.2 peft-0.4.0.dev0 protobuf-4.23.3 regex-2023.6.3 responses-0.18.0 safetensors-0.3.1 scikit-learn-1.2.2 scipy-1.11.0 sentencepiece-0.1.99 sentry-sdk-1.26.0 setproctitle-1.3.2 smmap-5.0.0 threadpoolctl-3.1.0 transformers-4.31.0.dev0 wandb-0.15.3
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda114.so
+False
+CUDA SETUP: CUDA runtime path found: /apps/software/standard/core/cuda/11.4.2/lib64/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 114
+CUDA SETUP: Required library version not found: libbitsandbytes_cuda114.so. Maybe you need to compile it from source?
+CUDA SETUP: Defaulting to libbitsandbytes_cpu.so...
+
+================================================ERROR=====================================
+CUDA SETUP: CUDA detection failed! Possible reasons:
+1. CUDA driver not installed
+2. CUDA not installed
+3. You have multiple conflicting CUDA libraries
+4. Required library not pre-compiled for this bitsandbytes release!
+CUDA SETUP: If you compiled from source, try again with `make CUDA_VERSION=DETECTED_CUDA_VERSION` for example, `make CUDA_VERSION=113`.
+CUDA SETUP: The CUDA version for the compile might depend on your conda install. Inspect CUDA version via `conda list | grep cuda`.
+================================================================================
+
+CUDA SETUP: Something unexpected happened. Please compile from source:
+git clone git@github.com:TimDettmers/bitsandbytes.git
+cd bitsandbytes
+CUDA_VERSION=114 make cuda11x
+python setup.py install
+CUDA SETUP: Setup Failed!

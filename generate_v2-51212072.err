@@ -1,0 +1,12 @@
+  Running command git clone --quiet https://github.com/huggingface/transformers.git /tmp/pip-install-256uhczw/transformers_9ebd896cab1148f7bc5118dd0f2223e8
+  Running command git clone --quiet https://github.com/huggingface/peft.git /tmp/pip-install-256uhczw/peft_19d307cf29a54b1092e98e5bf3d4258b
+  Running command git clone --quiet https://github.com/huggingface/accelerate.git /tmp/pip-install-256uhczw/accelerate_4e176f648f1a480b970ea8d65e633e9a
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so'), PosixPath('/home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s]Loading checkpoint shards:  11%|█         | 1/9 [00:06<00:55,  6.89s/it]Loading checkpoint shards:  22%|██▏       | 2/9 [00:13<00:47,  6.82s/it]Loading checkpoint shards:  33%|███▎      | 3/9 [00:19<00:37,  6.33s/it]Loading checkpoint shards:  44%|████▍     | 4/9 [00:25<00:30,  6.15s/it]Loading checkpoint shards:  56%|█████▌    | 5/9 [00:30<00:23,  5.93s/it]Loading checkpoint shards:  67%|██████▋   | 6/9 [00:36<00:17,  5.82s/it]Loading checkpoint shards:  78%|███████▊  | 7/9 [00:42<00:11,  5.76s/it]Loading checkpoint shards:  89%|████████▉ | 8/9 [00:47<00:05,  5.71s/it]Loading checkpoint shards: 100%|██████████| 9/9 [00:52<00:00,  5.34s/it]Loading checkpoint shards: 100%|██████████| 9/9 [00:52<00:00,  5.80s/it]
+Traceback (most recent call last):
+  File "/gpfs/gpfs0/project/SDS/research/christ_research/falcon/qlora/generate.py", line 94, in <module>
+    output = model.generate(inputs=inputs.input_ids)
+AttributeError: 'Tensor' object has no attribute 'input_ids'

@@ -1,0 +1,34 @@
+  Running command git clone --quiet https://github.com/huggingface/transformers.git /tmp/pip-install-btb3ea4r/transformers_96a946b93b6643a0ad5957a30fbca021
+  Running command git clone --quiet https://github.com/huggingface/peft.git /tmp/pip-install-btb3ea4r/peft_6861c17c43d74cab9f5a828c974c0222
+  Running command git clone --quiet https://github.com/huggingface/accelerate.git /tmp/pip-install-btb3ea4r/accelerate_f1e2fcfe171d405881f530ff73869275
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so'), PosixPath('/home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/configuration_utils.py:483: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/modeling_utils.py:2192: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s]Loading checkpoint shards:  11%|█         | 1/9 [00:19<02:33, 19.15s/it]Loading checkpoint shards:  22%|██▏       | 2/9 [00:35<02:01, 17.30s/it]Loading checkpoint shards:  33%|███▎      | 3/9 [00:50<01:38, 16.36s/it]Loading checkpoint shards:  33%|███▎      | 3/9 [00:58<01:56, 19.47s/it]
+Traceback (most recent call last):
+  File "/gpfs/gpfs0/project/SDS/research/christ_research/falcon/qlora/qlora.py", line 807, in <module>
+    train()
+  File "/gpfs/gpfs0/project/SDS/research/christ_research/falcon/qlora/qlora.py", line 643, in train
+    model = get_accelerate_model(args, checkpoint_dir)
+  File "/gpfs/gpfs0/project/SDS/research/christ_research/falcon/qlora/qlora.py", line 280, in get_accelerate_model
+    model = AutoModelForCausalLM.from_pretrained(
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/models/auto/auto_factory.py", line 479, in from_pretrained
+    return model_class.from_pretrained(
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/modeling_utils.py", line 2902, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/modeling_utils.py", line 3241, in _load_pretrained_model
+    new_error_msgs, offload_index, state_dict_index = _load_state_dict_into_meta_model(
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/modeling_utils.py", line 723, in _load_state_dict_into_meta_model
+    set_module_quantized_tensor_to_device(
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/utils/bitsandbytes.py", line 91, in set_module_quantized_tensor_to_device
+    new_value = bnb.nn.Params4bit(new_value, requires_grad=False, **kwargs).to(device)
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/nn/modules.py", line 176, in to
+    return self.cuda(device)
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/nn/modules.py", line 153, in cuda
+    w = self.data.contiguous().half().cuda(device)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 512.00 MiB. GPU 0 has a total capacty of 10.76 GiB of which 234.31 MiB is free. Including non-PyTorch memory, this process has 10.51 GiB memory in use. Of the allocated memory 9.24 GiB is allocated by PyTorch, and 635.44 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

@@ -1,0 +1,128 @@
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already up-to-date: bitsandbytes==0.39.0 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (0.39.0)
+Collecting transformers@ git+https://github.com/huggingface/transformers.git
+  Cloning https://github.com/huggingface/transformers.git to /tmp/pip-install-tv2065eu/transformers
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting peft@ git+https://github.com/huggingface/peft.git
+  Cloning https://github.com/huggingface/peft.git to /tmp/pip-install-tv2065eu/peft
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Collecting accelerate@ git+https://github.com/huggingface/accelerate.git
+  Cloning https://github.com/huggingface/accelerate.git to /tmp/pip-install-tv2065eu/accelerate
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+    Preparing wheel metadata: started
+    Preparing wheel metadata: finished with status 'done'
+Requirement already up-to-date: einops==0.6.1 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from -r requirements.txt (line 5)) (0.6.1)
+Requirement already up-to-date: evaluate==0.4.0 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from -r requirements.txt (line 6)) (0.4.0)
+Requirement already up-to-date: scikit-learn==1.2.2 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from -r requirements.txt (line 7)) (1.2.2)
+Requirement already up-to-date: sentencepiece==0.1.99 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from -r requirements.txt (line 8)) (0.1.99)
+Requirement already up-to-date: wandb==0.15.3 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from -r requirements.txt (line 9)) (0.15.3)
+Requirement already satisfied, skipping upgrade: packaging>=20.0 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (20.4)
+Requirement already satisfied, skipping upgrade: tokenizers!=0.11.3,<0.14,>=0.11.1 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (0.13.3)
+Requirement already satisfied, skipping upgrade: safetensors>=0.3.1 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (0.3.1)
+Requirement already satisfied, skipping upgrade: regex!=2019.12.17 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (2020.10.15)
+Requirement already satisfied, skipping upgrade: requests in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (2.31.0)
+Requirement already satisfied, skipping upgrade: filelock in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (3.12.2)
+Requirement already satisfied, skipping upgrade: huggingface-hub<1.0,>=0.14.1 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (0.15.1)
+Requirement already satisfied, skipping upgrade: tqdm>=4.27 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (4.65.0)
+Requirement already satisfied, skipping upgrade: pyyaml>=5.1 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (6.0)
+Requirement already satisfied, skipping upgrade: numpy>=1.17 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (1.23.2)
+Requirement already satisfied, skipping upgrade: torch>=1.13.0 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (2.1.0.dev20230615+cpu)
+Requirement already satisfied, skipping upgrade: psutil in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (5.9.5)
+Requirement already satisfied, skipping upgrade: datasets>=2.0.0 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (2.13.0)
+Requirement already satisfied, skipping upgrade: multiprocess in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (0.70.14)
+Requirement already satisfied, skipping upgrade: pandas in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (1.4.3)
+Requirement already satisfied, skipping upgrade: fsspec[http]>=2021.05.0 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (2023.6.0)
+Requirement already satisfied, skipping upgrade: responses<0.19 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (0.18.0)
+Requirement already satisfied, skipping upgrade: xxhash in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (3.2.0)
+Requirement already satisfied, skipping upgrade: dill in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (0.3.6)
+Requirement already satisfied, skipping upgrade: joblib>=1.1.1 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from scikit-learn==1.2.2->-r requirements.txt (line 7)) (1.2.0)
+Requirement already satisfied, skipping upgrade: threadpoolctl>=2.0.0 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from scikit-learn==1.2.2->-r requirements.txt (line 7)) (2.1.0)
+Requirement already satisfied, skipping upgrade: scipy>=1.3.2 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from scikit-learn==1.2.2->-r requirements.txt (line 7)) (1.10.1)
+Requirement already satisfied, skipping upgrade: setproctitle in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from wandb==0.15.3->-r requirements.txt (line 9)) (1.3.2)
+Requirement already satisfied, skipping upgrade: pathtools in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from wandb==0.15.3->-r requirements.txt (line 9)) (0.1.2)
+Requirement already satisfied, skipping upgrade: appdirs>=1.4.3 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from wandb==0.15.3->-r requirements.txt (line 9)) (1.4.4)
+Requirement already satisfied, skipping upgrade: docker-pycreds>=0.4.0 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from wandb==0.15.3->-r requirements.txt (line 9)) (0.4.0)
+Requirement already satisfied, skipping upgrade: GitPython!=3.1.29,>=1.0.0 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from wandb==0.15.3->-r requirements.txt (line 9)) (3.1.31)
+Requirement already satisfied, skipping upgrade: typing-extensions; python_version < "3.10" in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from wandb==0.15.3->-r requirements.txt (line 9)) (4.6.3)
+Requirement already satisfied, skipping upgrade: setuptools in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from wandb==0.15.3->-r requirements.txt (line 9)) (50.3.1.post20201107)
+Requirement already satisfied, skipping upgrade: protobuf!=4.21.0,<5,>=3.12.0; python_version < "3.9" and sys_platform == "linux" in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from wandb==0.15.3->-r requirements.txt (line 9)) (4.23.3)
+Requirement already satisfied, skipping upgrade: Click!=8.0.0,>=7.0 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from wandb==0.15.3->-r requirements.txt (line 9)) (7.1.2)
+Requirement already satisfied, skipping upgrade: sentry-sdk>=1.0.0 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from wandb==0.15.3->-r requirements.txt (line 9)) (1.26.0)
+Requirement already satisfied, skipping upgrade: pyparsing>=2.0.2 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from packaging>=20.0->transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (2.4.7)
+Requirement already satisfied, skipping upgrade: six in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from packaging>=20.0->transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (1.15.0)
+Requirement already satisfied, skipping upgrade: charset-normalizer<4,>=2 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from requests->transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (2.0.12)
+Requirement already satisfied, skipping upgrade: urllib3<3,>=1.21.1 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from requests->transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (1.25.11)
+Requirement already satisfied, skipping upgrade: certifi>=2017.4.17 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from requests->transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (2020.12.5)
+Requirement already satisfied, skipping upgrade: idna<4,>=2.5 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from requests->transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (2.10)
+Requirement already satisfied, skipping upgrade: sympy in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (1.12)
+Requirement already satisfied, skipping upgrade: networkx in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (2.5)
+Requirement already satisfied, skipping upgrade: jinja2 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (2.11.2)
+Requirement already satisfied, skipping upgrade: aiohttp in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (3.8.4)
+Requirement already satisfied, skipping upgrade: pyarrow>=8.0.0 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (12.0.1)
+Requirement already satisfied, skipping upgrade: python-dateutil>=2.8.1 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from pandas->evaluate==0.4.0->-r requirements.txt (line 6)) (2.8.1)
+Requirement already satisfied, skipping upgrade: pytz>=2020.1 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from pandas->evaluate==0.4.0->-r requirements.txt (line 6)) (2020.1)
+Requirement already satisfied, skipping upgrade: gitdb<5,>=4.0.1 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from GitPython!=3.1.29,>=1.0.0->wandb==0.15.3->-r requirements.txt (line 9)) (4.0.10)
+Requirement already satisfied, skipping upgrade: mpmath>=0.19 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from sympy->torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (1.3.0)
+Requirement already satisfied, skipping upgrade: decorator>=4.3.0 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from networkx->torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (4.4.2)
+Requirement already satisfied, skipping upgrade: MarkupSafe>=0.23 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from jinja2->torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (1.1.1)
+Requirement already satisfied, skipping upgrade: frozenlist>=1.1.1 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (1.3.3)
+Requirement already satisfied, skipping upgrade: aiosignal>=1.1.2 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (1.3.1)
+Requirement already satisfied, skipping upgrade: attrs>=17.3.0 in /sfs/applications/202306/software/standard/core/anaconda/2020.11-py3.8/lib/python3.8/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (20.3.0)
+Requirement already satisfied, skipping upgrade: async-timeout<5.0,>=4.0.0a3 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (4.0.2)
+Requirement already satisfied, skipping upgrade: multidict<7.0,>=4.5 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (6.0.4)
+Requirement already satisfied, skipping upgrade: yarl<2.0,>=1.0 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (1.9.2)
+Requirement already satisfied, skipping upgrade: smmap<6,>=3.0.1 in /sfs/qumulo/qhome/brc4cb/.local/lib/python3.8/site-packages (from gitdb<5,>=4.0.1->GitPython!=3.1.29,>=1.0.0->wandb==0.15.3->-r requirements.txt (line 9)) (5.0.0)
+Building wheels for collected packages: transformers, peft, accelerate
+  Building wheel for transformers (PEP 517): started
+  Building wheel for transformers (PEP 517): finished with status 'done'
+  Created wheel for transformers: filename=transformers-4.31.0.dev0-py3-none-any.whl size=7233702 sha256=eecd2f64c474d35f006057e9c751bfd8e9a07ae2d1a6c009ca24e6ab1fce79ab
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ckqrzanj/wheels/05/0a/97/64ae47c27ba95fae2cb5838e7b4b7247a34d4a8ba5f7092de2
+  Building wheel for peft (PEP 517): started
+  Building wheel for peft (PEP 517): finished with status 'done'
+  Created wheel for peft: filename=peft-0.4.0.dev0-py3-none-any.whl size=61828 sha256=473e027ba3927a995fad12cdc2db27b87016fc1f5f4993d2664d015de38ec0da
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ckqrzanj/wheels/95/fe/57/a484616f9bd99820cb946c7c3d2b1b492423b504356b0797dd
+  Building wheel for accelerate (PEP 517): started
+  Building wheel for accelerate (PEP 517): finished with status 'done'
+  Created wheel for accelerate: filename=accelerate-0.21.0.dev0-py3-none-any.whl size=231525 sha256=5b1f7852c1e6e67efb97e864c57947470c30a0e5c9bbf51cea97d3af5796d064
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ckqrzanj/wheels/0e/3c/a4/a965507f9d132376a5e3c337ed615278a9afc049743353bd6b
+Successfully built transformers peft accelerate
+Installing collected packages: transformers, accelerate, peft
+  Attempting uninstall: transformers
+    Found existing installation: transformers 4.31.0.dev0
+    Uninstalling transformers-4.31.0.dev0:
+      Successfully uninstalled transformers-4.31.0.dev0
+  Attempting uninstall: accelerate
+    Found existing installation: accelerate 0.21.0.dev0
+    Uninstalling accelerate-0.21.0.dev0:
+      Successfully uninstalled accelerate-0.21.0.dev0
+  Attempting uninstall: peft
+    Found existing installation: peft 0.4.0.dev0
+    Uninstalling peft-0.4.0.dev0:
+      Successfully uninstalled peft-0.4.0.dev0
+Successfully installed accelerate-0.21.0.dev0 peft-0.4.0.dev0 transformers-4.31.0.dev0
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda114.so
+CUDA SETUP: CUDA runtime path found: /apps/software/standard/core/cuda/11.4.2/lib64/libcudart.so
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 114
+CUDA SETUP: Loading binary /home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda114.so...

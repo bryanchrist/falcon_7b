@@ -1,0 +1,13 @@
+  Running command git clone --quiet https://github.com/huggingface/transformers.git /tmp/pip-install-qdp3_heh/transformers_2886edf0eea04ca989092da111fcd9ab
+  Running command git clone --quiet https://github.com/huggingface/peft.git /tmp/pip-install-qdp3_heh/peft_61930913eb36471790bae1165f854208
+  Running command git clone --quiet https://github.com/huggingface/accelerate.git /tmp/pip-install-qdp3_heh/accelerate_d89bea5ff6e64759a8b19455ed2b1e6b
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so'), PosixPath('/home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so.11.0')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/configuration_utils.py:483: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/transformers/modeling_utils.py:2192: FutureWarning: The `use_auth_token` argument is deprecated and will be removed in v5 of Transformers.
+  warnings.warn(
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s]/var/spool/slurm/slurmd/job51128983/slurm_script: line 35: 117158 Killed                  python qlora.py --learning_rate 0.0001 --model_name_or_path checkpoints/tiiuae/falcon-40b-instruct --dataset = "data/ASDiv_clean.json"
+slurmstepd: error: Detected 1 oom-kill event(s) in StepId=51128983.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.

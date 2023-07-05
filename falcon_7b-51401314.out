@@ -1,0 +1,1164 @@
+Collecting transformers@ git+https://github.com/huggingface/transformers.git (from -r requirements.txt (line 2))
+  Cloning https://github.com/huggingface/transformers.git to /tmp/pip-install-3fv33nzg/transformers_4804b3ed97a54eb5b9a7cb8a57971171
+  Resolved https://github.com/huggingface/transformers.git to commit f3e96235a324dfd14a3e4ed4535259768b6c9b0e
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting peft@ git+https://github.com/huggingface/peft.git (from -r requirements.txt (line 3))
+  Cloning https://github.com/huggingface/peft.git to /tmp/pip-install-3fv33nzg/peft_705eec4ce879431e9a9ca74b5c4d0cdc
+  Resolved https://github.com/huggingface/peft.git to commit 032fff92fb74b737a2934e91a08d82142fb79dc3
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting accelerate@ git+https://github.com/huggingface/accelerate.git (from -r requirements.txt (line 4))
+  Cloning https://github.com/huggingface/accelerate.git to /tmp/pip-install-3fv33nzg/accelerate_53b41e6e0eb042e29f2e342462b37617
+  Resolved https://github.com/huggingface/accelerate.git to commit dfbfbdfea848591a30585d641fbd1e79aecd2400
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: bitsandbytes==0.39.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from -r requirements.txt (line 1)) (0.39.0)
+Requirement already satisfied: einops==0.6.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from -r requirements.txt (line 5)) (0.6.1)
+Requirement already satisfied: evaluate==0.4.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from -r requirements.txt (line 6)) (0.4.0)
+Requirement already satisfied: scikit-learn==1.2.2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from -r requirements.txt (line 7)) (1.2.2)
+Requirement already satisfied: scipy in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from -r requirements.txt (line 8)) (1.11.1)
+Requirement already satisfied: sentencepiece==0.1.99 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from -r requirements.txt (line 9)) (0.1.99)
+Requirement already satisfied: wandb==0.15.3 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from -r requirements.txt (line 10)) (0.15.3)
+Requirement already satisfied: datasets>=2.0.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (2.13.1)
+Requirement already satisfied: numpy>=1.17 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (1.25.0)
+Requirement already satisfied: dill in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (0.3.6)
+Requirement already satisfied: pandas in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (2.0.2)
+Requirement already satisfied: requests>=2.19.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (2.31.0)
+Requirement already satisfied: tqdm>=4.62.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (4.65.0)
+Requirement already satisfied: xxhash in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (3.2.0)
+Requirement already satisfied: multiprocess in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (0.70.14)
+Requirement already satisfied: fsspec[http]>=2021.05.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (2023.4.0)
+Requirement already satisfied: huggingface-hub>=0.7.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (0.15.1)
+Requirement already satisfied: packaging in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (23.1)
+Requirement already satisfied: responses<0.19 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from evaluate==0.4.0->-r requirements.txt (line 6)) (0.18.0)
+Requirement already satisfied: joblib>=1.1.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from scikit-learn==1.2.2->-r requirements.txt (line 7)) (1.2.0)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from scikit-learn==1.2.2->-r requirements.txt (line 7)) (3.1.0)
+Requirement already satisfied: Click!=8.0.0,>=7.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (8.1.3)
+Requirement already satisfied: GitPython!=3.1.29,>=1.0.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (3.1.31)
+Requirement already satisfied: psutil>=5.0.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (5.9.5)
+Requirement already satisfied: sentry-sdk>=1.0.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (1.26.0)
+Requirement already satisfied: docker-pycreds>=0.4.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (0.4.0)
+Requirement already satisfied: PyYAML in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (6.0)
+Requirement already satisfied: pathtools in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (0.1.2)
+Requirement already satisfied: setproctitle in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (1.3.2)
+Requirement already satisfied: setuptools in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (67.8.0)
+Requirement already satisfied: appdirs>=1.4.3 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (1.4.4)
+Requirement already satisfied: typing-extensions in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (4.4.0)
+Requirement already satisfied: protobuf!=4.21.0,<5,>=3.15.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from wandb==0.15.3->-r requirements.txt (line 10)) (4.23.3)
+Requirement already satisfied: filelock in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (3.9.0)
+Requirement already satisfied: regex!=2019.12.17 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (2023.6.3)
+Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (0.13.3)
+Requirement already satisfied: safetensors>=0.3.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from transformers@ git+https://github.com/huggingface/transformers.git->-r requirements.txt (line 2)) (0.3.1)
+Requirement already satisfied: torch>=1.13.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (2.1.0.dev20230624+cu118)
+Requirement already satisfied: pyarrow>=8.0.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (12.0.1)
+Requirement already satisfied: aiohttp in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (3.8.4)
+Requirement already satisfied: six>=1.4.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from docker-pycreds>=0.4.0->wandb==0.15.3->-r requirements.txt (line 10)) (1.16.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from GitPython!=3.1.29,>=1.0.0->wandb==0.15.3->-r requirements.txt (line 10)) (4.0.10)
+Requirement already satisfied: charset-normalizer<4,>=2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests>=2.19.0->evaluate==0.4.0->-r requirements.txt (line 6)) (3.1.0)
+Requirement already satisfied: idna<4,>=2.5 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests>=2.19.0->evaluate==0.4.0->-r requirements.txt (line 6)) (3.4)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests>=2.19.0->evaluate==0.4.0->-r requirements.txt (line 6)) (2.0.3)
+Requirement already satisfied: certifi>=2017.4.17 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from requests>=2.19.0->evaluate==0.4.0->-r requirements.txt (line 6)) (2023.5.7)
+Requirement already satisfied: sympy in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (1.11.1)
+Requirement already satisfied: networkx in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (3.0rc1)
+Requirement already satisfied: jinja2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (3.1.2)
+Requirement already satisfied: pytorch-triton==2.1.0+440fd1bf20 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (2.1.0+440fd1bf20)
+Requirement already satisfied: python-dateutil>=2.8.2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from pandas->evaluate==0.4.0->-r requirements.txt (line 6)) (2.8.2)
+Requirement already satisfied: pytz>=2020.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from pandas->evaluate==0.4.0->-r requirements.txt (line 6)) (2023.3)
+Requirement already satisfied: tzdata>=2022.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from pandas->evaluate==0.4.0->-r requirements.txt (line 6)) (2023.3)
+Requirement already satisfied: attrs>=17.3.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (23.1.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (6.0.4)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (4.0.2)
+Requirement already satisfied: yarl<2.0,>=1.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (1.9.2)
+Requirement already satisfied: frozenlist>=1.1.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (1.3.3)
+Requirement already satisfied: aiosignal>=1.1.2 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from aiohttp->datasets>=2.0.0->evaluate==0.4.0->-r requirements.txt (line 6)) (1.3.1)
+Requirement already satisfied: smmap<6,>=3.0.1 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from gitdb<5,>=4.0.1->GitPython!=3.1.29,>=1.0.0->wandb==0.15.3->-r requirements.txt (line 10)) (5.0.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from jinja2->torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (2.1.2)
+Requirement already satisfied: mpmath>=0.19 in /sfs/qumulo/qhome/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages (from sympy->torch>=1.13.0->peft@ git+https://github.com/huggingface/peft.git->-r requirements.txt (line 3)) (1.2.1)
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+
+===================================BUG REPORT===================================
+Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+ and submit this information together with your error trace to: https://github.com/TimDettmers/bitsandbytes/issues
+================================================================================
+bin /home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so
+CUDA SETUP: CUDA runtime path found: /home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so.11.0
+CUDA SETUP: Highest compute capability among GPUs detected: 8.0
+CUDA SETUP: Detected CUDA version 118
+CUDA SETUP: Loading binary /home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/libbitsandbytes_cuda118.so...
+[2023-07-04 15:03:58,433] [INFO] [real_accelerator.py:110:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+loading base model checkpoints/tiiuae/falcon-7b...
+adding LoRA modules...
+trainable params: 65273856.0 || all params: 3739292544 || trainable: 1.7456204678271892
+loaded model
+Downloading and preparing dataset json/default to /home/brc4cb/.cache/huggingface/datasets/json/default-c96f51102a840641/0.0.0...
+Dataset json downloaded and prepared to /home/brc4cb/.cache/huggingface/datasets/json/default-c96f51102a840641/0.0.0. Subsequent calls will reuse this data.
+torch.float32 426321216 0.11401105768464685
+torch.uint8 3312975872 0.8859889423153532
+{'loss': 1.9594, 'learning_rate': 0.0002, 'epoch': 0.08}
+{'loss': 1.7008, 'learning_rate': 0.0002, 'epoch': 0.15}
+{'loss': 1.463, 'learning_rate': 0.0002, 'epoch': 0.23}
+{'loss': 1.806, 'learning_rate': 0.0002, 'epoch': 0.31}
+{'loss': 1.6981, 'learning_rate': 0.0002, 'epoch': 0.39}
+{'loss': 1.4995, 'learning_rate': 0.0002, 'epoch': 0.46}
+{'loss': 1.6451, 'learning_rate': 0.0002, 'epoch': 0.54}
+{'loss': 1.5731, 'learning_rate': 0.0002, 'epoch': 0.62}
+{'loss': 1.4139, 'learning_rate': 0.0002, 'epoch': 0.69}
+{'loss': 1.4812, 'learning_rate': 0.0002, 'epoch': 0.77}
+{'loss': 1.627, 'learning_rate': 0.0002, 'epoch': 0.85}
+{'loss': 1.404, 'learning_rate': 0.0002, 'epoch': 0.93}
+{'loss': 1.3257, 'learning_rate': 0.0002, 'epoch': 1.0}
+{'loss': 1.2652, 'learning_rate': 0.0002, 'epoch': 1.08}
+{'loss': 1.1341, 'learning_rate': 0.0002, 'epoch': 1.16}
+{'loss': 0.961, 'learning_rate': 0.0002, 'epoch': 1.23}
+{'loss': 1.2553, 'learning_rate': 0.0002, 'epoch': 1.31}
+{'loss': 1.1622, 'learning_rate': 0.0002, 'epoch': 1.39}
+{'loss': 1.0019, 'learning_rate': 0.0002, 'epoch': 1.47}
+{'loss': 1.1623, 'learning_rate': 0.0002, 'epoch': 1.54}
+{'loss': 1.1842, 'learning_rate': 0.0002, 'epoch': 1.62}
+{'loss': 1.108, 'learning_rate': 0.0002, 'epoch': 1.7}
+{'loss': 1.1308, 'learning_rate': 0.0002, 'epoch': 1.77}
+{'loss': 1.2183, 'learning_rate': 0.0002, 'epoch': 1.85}
+{'loss': 1.1318, 'learning_rate': 0.0002, 'epoch': 1.93}
+Saving PEFT checkpoint...
+{'loss': 1.0152, 'learning_rate': 0.0002, 'epoch': 2.01}
+{'loss': 0.8777, 'learning_rate': 0.0002, 'epoch': 2.08}
+{'loss': 0.7665, 'learning_rate': 0.0002, 'epoch': 2.16}
+{'loss': 0.6921, 'learning_rate': 0.0002, 'epoch': 2.24}
+{'loss': 0.8555, 'learning_rate': 0.0002, 'epoch': 2.31}
+{'loss': 0.8329, 'learning_rate': 0.0002, 'epoch': 2.39}
+{'loss': 0.7557, 'learning_rate': 0.0002, 'epoch': 2.47}
+{'loss': 0.8557, 'learning_rate': 0.0002, 'epoch': 2.55}
+{'loss': 0.8768, 'learning_rate': 0.0002, 'epoch': 2.62}
+{'loss': 0.7707, 'learning_rate': 0.0002, 'epoch': 2.7}
+{'loss': 0.8697, 'learning_rate': 0.0002, 'epoch': 2.78}
+{'loss': 0.9053, 'learning_rate': 0.0002, 'epoch': 2.85}
+{'loss': 0.8175, 'learning_rate': 0.0002, 'epoch': 2.93}
+{'loss': 0.7745, 'learning_rate': 0.0002, 'epoch': 3.01}
+{'loss': 0.5731, 'learning_rate': 0.0002, 'epoch': 3.09}
+{'loss': 0.5053, 'learning_rate': 0.0002, 'epoch': 3.16}
+{'loss': 0.5119, 'learning_rate': 0.0002, 'epoch': 3.24}
+{'loss': 0.6196, 'learning_rate': 0.0002, 'epoch': 3.32}
+{'loss': 0.5879, 'learning_rate': 0.0002, 'epoch': 3.39}
+{'loss': 0.5379, 'learning_rate': 0.0002, 'epoch': 3.47}
+{'loss': 0.616, 'learning_rate': 0.0002, 'epoch': 3.55}
+{'loss': 0.6035, 'learning_rate': 0.0002, 'epoch': 3.63}
+{'loss': 0.5512, 'learning_rate': 0.0002, 'epoch': 3.7}
+{'loss': 0.6212, 'learning_rate': 0.0002, 'epoch': 3.78}
+{'loss': 0.6354, 'learning_rate': 0.0002, 'epoch': 3.86}
+Saving PEFT checkpoint...
+{'loss': 0.5828, 'learning_rate': 0.0002, 'epoch': 3.93}
+{'loss': 0.5623, 'learning_rate': 0.0002, 'epoch': 4.01}
+{'loss': 0.3907, 'learning_rate': 0.0002, 'epoch': 4.09}
+{'loss': 0.3725, 'learning_rate': 0.0002, 'epoch': 4.17}
+{'loss': 0.3839, 'learning_rate': 0.0002, 'epoch': 4.24}
+{'loss': 0.4214, 'learning_rate': 0.0002, 'epoch': 4.32}
+{'loss': 0.3936, 'learning_rate': 0.0002, 'epoch': 4.4}
+{'loss': 0.4061, 'learning_rate': 0.0002, 'epoch': 4.47}
+{'loss': 0.4426, 'learning_rate': 0.0002, 'epoch': 4.55}
+{'loss': 0.4109, 'learning_rate': 0.0002, 'epoch': 4.63}
+{'loss': 0.4492, 'learning_rate': 0.0002, 'epoch': 4.71}
+{'loss': 0.4487, 'learning_rate': 0.0002, 'epoch': 4.78}
+{'loss': 0.4533, 'learning_rate': 0.0002, 'epoch': 4.86}
+{'loss': 0.4451, 'learning_rate': 0.0002, 'epoch': 4.94}
+{'loss': 0.4459, 'learning_rate': 0.0002, 'epoch': 5.01}
+{'loss': 0.2602, 'learning_rate': 0.0002, 'epoch': 5.09}
+{'loss': 0.2984, 'learning_rate': 0.0002, 'epoch': 5.17}
+{'loss': 0.343, 'learning_rate': 0.0002, 'epoch': 5.25}
+{'loss': 0.2891, 'learning_rate': 0.0002, 'epoch': 5.32}
+{'loss': 0.3243, 'learning_rate': 0.0002, 'epoch': 5.4}
+{'loss': 0.3548, 'learning_rate': 0.0002, 'epoch': 5.48}
+{'loss': 0.3071, 'learning_rate': 0.0002, 'epoch': 5.55}
+{'loss': 0.3331, 'learning_rate': 0.0002, 'epoch': 5.63}
+{'loss': 0.3479, 'learning_rate': 0.0002, 'epoch': 5.71}
+{'loss': 0.3398, 'learning_rate': 0.0002, 'epoch': 5.79}
+Saving PEFT checkpoint...
+{'loss': 0.3229, 'learning_rate': 0.0002, 'epoch': 5.86}
+{'loss': 0.3485, 'learning_rate': 0.0002, 'epoch': 5.94}
+{'loss': 0.3485, 'learning_rate': 0.0002, 'epoch': 6.02}
+{'loss': 0.2122, 'learning_rate': 0.0002, 'epoch': 6.09}
+{'loss': 0.2444, 'learning_rate': 0.0002, 'epoch': 6.17}
+{'loss': 0.3097, 'learning_rate': 0.0002, 'epoch': 6.25}
+{'loss': 0.221, 'learning_rate': 0.0002, 'epoch': 6.33}
+{'loss': 0.2562, 'learning_rate': 0.0002, 'epoch': 6.4}
+{'loss': 0.3023, 'learning_rate': 0.0002, 'epoch': 6.48}
+{'loss': 0.2516, 'learning_rate': 0.0002, 'epoch': 6.56}
+{'loss': 0.2768, 'learning_rate': 0.0002, 'epoch': 6.63}
+{'loss': 0.3128, 'learning_rate': 0.0002, 'epoch': 6.71}
+{'loss': 0.2718, 'learning_rate': 0.0002, 'epoch': 6.79}
+{'loss': 0.2697, 'learning_rate': 0.0002, 'epoch': 6.87}
+{'loss': 0.3228, 'learning_rate': 0.0002, 'epoch': 6.94}
+{'loss': 0.3026, 'learning_rate': 0.0002, 'epoch': 7.02}
+{'loss': 0.1802, 'learning_rate': 0.0002, 'epoch': 7.1}
+{'loss': 0.2272, 'learning_rate': 0.0002, 'epoch': 7.17}
+{'loss': 0.2795, 'learning_rate': 0.0002, 'epoch': 7.25}
+{'loss': 0.1867, 'learning_rate': 0.0002, 'epoch': 7.33}
+{'loss': 0.2382, 'learning_rate': 0.0002, 'epoch': 7.41}
+{'loss': 0.2821, 'learning_rate': 0.0002, 'epoch': 7.48}
+{'loss': 0.2107, 'learning_rate': 0.0002, 'epoch': 7.56}
+{'loss': 0.2482, 'learning_rate': 0.0002, 'epoch': 7.64}
+{'loss': 0.2833, 'learning_rate': 0.0002, 'epoch': 7.71}
+Saving PEFT checkpoint...
+{'loss': 0.24, 'learning_rate': 0.0002, 'epoch': 7.79}
+{'loss': 0.2423, 'learning_rate': 0.0002, 'epoch': 7.87}
+{'loss': 0.2846, 'learning_rate': 0.0002, 'epoch': 7.95}
+{'loss': 0.2585, 'learning_rate': 0.0002, 'epoch': 8.02}
+{'loss': 0.1651, 'learning_rate': 0.0002, 'epoch': 8.1}
+{'loss': 0.2116, 'learning_rate': 0.0002, 'epoch': 8.18}
+{'loss': 0.2444, 'learning_rate': 0.0002, 'epoch': 8.25}
+{'loss': 0.1759, 'learning_rate': 0.0002, 'epoch': 8.33}
+{'loss': 0.2202, 'learning_rate': 0.0002, 'epoch': 8.41}
+{'loss': 0.2609, 'learning_rate': 0.0002, 'epoch': 8.49}
+{'loss': 0.1887, 'learning_rate': 0.0002, 'epoch': 8.56}
+{'loss': 0.2321, 'learning_rate': 0.0002, 'epoch': 8.64}
+{'loss': 0.2877, 'learning_rate': 0.0002, 'epoch': 8.72}
+{'loss': 0.2084, 'learning_rate': 0.0002, 'epoch': 8.79}
+{'loss': 0.2323, 'learning_rate': 0.0002, 'epoch': 8.87}
+{'loss': 0.2598, 'learning_rate': 0.0002, 'epoch': 8.95}
+{'loss': 0.2447, 'learning_rate': 0.0002, 'epoch': 9.03}
+{'loss': 0.1579, 'learning_rate': 0.0002, 'epoch': 9.1}
+{'loss': 0.2067, 'learning_rate': 0.0002, 'epoch': 9.18}
+{'loss': 0.2265, 'learning_rate': 0.0002, 'epoch': 9.26}
+{'loss': 0.1654, 'learning_rate': 0.0002, 'epoch': 9.33}
+{'loss': 0.2153, 'learning_rate': 0.0002, 'epoch': 9.41}
+{'loss': 0.2674, 'learning_rate': 0.0002, 'epoch': 9.49}
+{'loss': 0.1668, 'learning_rate': 0.0002, 'epoch': 9.57}
+{'loss': 0.2237, 'learning_rate': 0.0002, 'epoch': 9.64}
+Saving PEFT checkpoint...
+{'loss': 0.2553, 'learning_rate': 0.0002, 'epoch': 9.72}
+{'loss': 0.2035, 'learning_rate': 0.0002, 'epoch': 9.8}
+{'loss': 0.2204, 'learning_rate': 0.0002, 'epoch': 9.87}
+{'loss': 0.2676, 'learning_rate': 0.0002, 'epoch': 9.95}
+{'loss': 0.2195, 'learning_rate': 0.0002, 'epoch': 10.03}
+{'loss': 0.1563, 'learning_rate': 0.0002, 'epoch': 10.11}
+{'loss': 0.2048, 'learning_rate': 0.0002, 'epoch': 10.18}
+{'loss': 0.2213, 'learning_rate': 0.0002, 'epoch': 10.26}
+{'loss': 0.1719, 'learning_rate': 0.0002, 'epoch': 10.34}
+{'loss': 0.2267, 'learning_rate': 0.0002, 'epoch': 10.41}
+{'loss': 0.2627, 'learning_rate': 0.0002, 'epoch': 10.49}
+{'loss': 0.1726, 'learning_rate': 0.0002, 'epoch': 10.57}
+{'loss': 0.2126, 'learning_rate': 0.0002, 'epoch': 10.65}
+{'loss': 0.2596, 'learning_rate': 0.0002, 'epoch': 10.72}
+{'loss': 0.194, 'learning_rate': 0.0002, 'epoch': 10.8}
+{'loss': 0.2247, 'learning_rate': 0.0002, 'epoch': 10.88}
+{'loss': 0.258, 'learning_rate': 0.0002, 'epoch': 10.95}
+{'loss': 0.2302, 'learning_rate': 0.0002, 'epoch': 11.03}
+{'loss': 0.1656, 'learning_rate': 0.0002, 'epoch': 11.11}
+{'loss': 0.203, 'learning_rate': 0.0002, 'epoch': 11.19}
+{'loss': 0.2251, 'learning_rate': 0.0002, 'epoch': 11.26}
+{'loss': 0.1625, 'learning_rate': 0.0002, 'epoch': 11.34}
+{'loss': 0.232, 'learning_rate': 0.0002, 'epoch': 11.42}
+{'loss': 0.2588, 'learning_rate': 0.0002, 'epoch': 11.49}
+{'loss': 0.1703, 'learning_rate': 0.0002, 'epoch': 11.57}
+Saving PEFT checkpoint...
+{'loss': 0.219, 'learning_rate': 0.0002, 'epoch': 11.65}
+{'loss': 0.2646, 'learning_rate': 0.0002, 'epoch': 11.73}
+{'loss': 0.185, 'learning_rate': 0.0002, 'epoch': 11.8}
+{'loss': 0.2141, 'learning_rate': 0.0002, 'epoch': 11.88}
+{'loss': 0.256, 'learning_rate': 0.0002, 'epoch': 11.96}
+{'loss': 0.2066, 'learning_rate': 0.0002, 'epoch': 12.03}
+{'loss': 0.1692, 'learning_rate': 0.0002, 'epoch': 12.11}
+{'loss': 0.2017, 'learning_rate': 0.0002, 'epoch': 12.19}
+{'loss': 0.2273, 'learning_rate': 0.0002, 'epoch': 12.27}
+{'loss': 0.1565, 'learning_rate': 0.0002, 'epoch': 12.34}
+{'loss': 0.2149, 'learning_rate': 0.0002, 'epoch': 12.42}
+{'loss': 0.2495, 'learning_rate': 0.0002, 'epoch': 12.5}
+{'loss': 0.1732, 'learning_rate': 0.0002, 'epoch': 12.57}
+{'loss': 0.2081, 'learning_rate': 0.0002, 'epoch': 12.65}
+{'loss': 0.2579, 'learning_rate': 0.0002, 'epoch': 12.73}
+{'loss': 0.177, 'learning_rate': 0.0002, 'epoch': 12.81}
+{'loss': 0.1986, 'learning_rate': 0.0002, 'epoch': 12.88}
+{'loss': 0.2424, 'learning_rate': 0.0002, 'epoch': 12.96}
+{'loss': 0.1949, 'learning_rate': 0.0002, 'epoch': 13.04}
+{'loss': 0.1602, 'learning_rate': 0.0002, 'epoch': 13.11}
+{'loss': 0.1949, 'learning_rate': 0.0002, 'epoch': 13.19}
+{'loss': 0.2026, 'learning_rate': 0.0002, 'epoch': 13.27}
+{'loss': 0.1619, 'learning_rate': 0.0002, 'epoch': 13.35}
+{'loss': 0.2066, 'learning_rate': 0.0002, 'epoch': 13.42}
+{'loss': 0.2381, 'learning_rate': 0.0002, 'epoch': 13.5}
+Saving PEFT checkpoint...
+{'loss': 0.1553, 'learning_rate': 0.0002, 'epoch': 13.58}
+{'loss': 0.2042, 'learning_rate': 0.0002, 'epoch': 13.65}
+{'loss': 0.2518, 'learning_rate': 0.0002, 'epoch': 13.73}
+{'loss': 0.1589, 'learning_rate': 0.0002, 'epoch': 13.81}
+{'loss': 0.1957, 'learning_rate': 0.0002, 'epoch': 13.89}
+{'loss': 0.2535, 'learning_rate': 0.0002, 'epoch': 13.96}
+{'loss': 0.1797, 'learning_rate': 0.0002, 'epoch': 14.04}
+{'loss': 0.1528, 'learning_rate': 0.0002, 'epoch': 14.12}
+{'loss': 0.1982, 'learning_rate': 0.0002, 'epoch': 14.19}
+{'loss': 0.201, 'learning_rate': 0.0002, 'epoch': 14.27}
+{'loss': 0.1589, 'learning_rate': 0.0002, 'epoch': 14.35}
+{'loss': 0.1941, 'learning_rate': 0.0002, 'epoch': 14.43}
+{'loss': 0.2327, 'learning_rate': 0.0002, 'epoch': 14.5}
+{'loss': 0.1456, 'learning_rate': 0.0002, 'epoch': 14.58}
+{'loss': 0.203, 'learning_rate': 0.0002, 'epoch': 14.66}
+{'loss': 0.2479, 'learning_rate': 0.0002, 'epoch': 14.73}
+{'loss': 0.1569, 'learning_rate': 0.0002, 'epoch': 14.81}
+{'loss': 0.1893, 'learning_rate': 0.0002, 'epoch': 14.89}
+{'loss': 0.2456, 'learning_rate': 0.0002, 'epoch': 14.97}
+{'loss': 0.1874, 'learning_rate': 0.0002, 'epoch': 15.04}
+{'loss': 0.1477, 'learning_rate': 0.0002, 'epoch': 15.12}
+{'loss': 0.2016, 'learning_rate': 0.0002, 'epoch': 15.2}
+{'loss': 0.194, 'learning_rate': 0.0002, 'epoch': 15.27}
+{'loss': 0.1522, 'learning_rate': 0.0002, 'epoch': 15.35}
+{'loss': 0.1957, 'learning_rate': 0.0002, 'epoch': 15.43}
+Saving PEFT checkpoint...
+{'loss': 0.2224, 'learning_rate': 0.0002, 'epoch': 15.51}
+{'loss': 0.1478, 'learning_rate': 0.0002, 'epoch': 15.58}
+{'loss': 0.1934, 'learning_rate': 0.0002, 'epoch': 15.66}
+{'loss': 0.2527, 'learning_rate': 0.0002, 'epoch': 15.74}
+{'loss': 0.1495, 'learning_rate': 0.0002, 'epoch': 15.81}
+{'loss': 0.1898, 'learning_rate': 0.0002, 'epoch': 15.89}
+{'loss': 0.2455, 'learning_rate': 0.0002, 'epoch': 15.97}
+{'loss': 0.1696, 'learning_rate': 0.0002, 'epoch': 16.05}
+{'loss': 0.1504, 'learning_rate': 0.0002, 'epoch': 16.12}
+{'loss': 0.189, 'learning_rate': 0.0002, 'epoch': 16.2}
+{'loss': 0.1918, 'learning_rate': 0.0002, 'epoch': 16.28}
+{'loss': 0.1528, 'learning_rate': 0.0002, 'epoch': 16.35}
+{'loss': 0.1961, 'learning_rate': 0.0002, 'epoch': 16.43}
+{'loss': 0.222, 'learning_rate': 0.0002, 'epoch': 16.51}
+{'loss': 0.15, 'learning_rate': 0.0002, 'epoch': 16.59}
+{'loss': 0.198, 'learning_rate': 0.0002, 'epoch': 16.66}
+{'loss': 0.2435, 'learning_rate': 0.0002, 'epoch': 16.74}
+{'loss': 0.1427, 'learning_rate': 0.0002, 'epoch': 16.82}
+{'loss': 0.1875, 'learning_rate': 0.0002, 'epoch': 16.89}
+{'loss': 0.2472, 'learning_rate': 0.0002, 'epoch': 16.97}
+{'loss': 0.1596, 'learning_rate': 0.0002, 'epoch': 17.05}
+{'loss': 0.158, 'learning_rate': 0.0002, 'epoch': 17.13}
+{'loss': 0.1891, 'learning_rate': 0.0002, 'epoch': 17.2}
+{'loss': 0.1835, 'learning_rate': 0.0002, 'epoch': 17.28}
+{'loss': 0.1576, 'learning_rate': 0.0002, 'epoch': 17.36}
+Saving PEFT checkpoint...
+{'loss': 0.1989, 'learning_rate': 0.0002, 'epoch': 17.43}
+{'loss': 0.2091, 'learning_rate': 0.0002, 'epoch': 17.51}
+{'loss': 0.1497, 'learning_rate': 0.0002, 'epoch': 17.59}
+{'loss': 0.1971, 'learning_rate': 0.0002, 'epoch': 17.67}
+{'loss': 0.2401, 'learning_rate': 0.0002, 'epoch': 17.74}
+{'loss': 0.1409, 'learning_rate': 0.0002, 'epoch': 17.82}
+{'loss': 0.1893, 'learning_rate': 0.0002, 'epoch': 17.9}
+{'loss': 0.2408, 'learning_rate': 0.0002, 'epoch': 17.97}
+{'loss': 0.154, 'learning_rate': 0.0002, 'epoch': 18.05}
+{'loss': 0.1588, 'learning_rate': 0.0002, 'epoch': 18.13}
+{'loss': 0.1951, 'learning_rate': 0.0002, 'epoch': 18.21}
+{'loss': 0.1787, 'learning_rate': 0.0002, 'epoch': 18.28}
+{'loss': 0.1611, 'learning_rate': 0.0002, 'epoch': 18.36}
+{'loss': 0.2036, 'learning_rate': 0.0002, 'epoch': 18.44}
+{'loss': 0.2114, 'learning_rate': 0.0002, 'epoch': 18.51}
+{'loss': 0.1555, 'learning_rate': 0.0002, 'epoch': 18.59}
+{'loss': 0.1996, 'learning_rate': 0.0002, 'epoch': 18.67}
+{'loss': 0.2409, 'learning_rate': 0.0002, 'epoch': 18.75}
+{'loss': 0.1459, 'learning_rate': 0.0002, 'epoch': 18.82}
+{'loss': 0.1961, 'learning_rate': 0.0002, 'epoch': 18.9}
+{'loss': 0.2367, 'learning_rate': 0.0002, 'epoch': 18.98}
+{'loss': 0.15, 'learning_rate': 0.0002, 'epoch': 19.05}
+{'loss': 0.1657, 'learning_rate': 0.0002, 'epoch': 19.13}
+{'loss': 0.2038, 'learning_rate': 0.0002, 'epoch': 19.21}
+{'loss': 0.1763, 'learning_rate': 0.0002, 'epoch': 19.29}
+Saving PEFT checkpoint...
+{'loss': 0.1563, 'learning_rate': 0.0002, 'epoch': 19.36}
+{'loss': 0.1948, 'learning_rate': 0.0002, 'epoch': 19.44}
+{'loss': 0.2053, 'learning_rate': 0.0002, 'epoch': 19.52}
+{'loss': 0.1585, 'learning_rate': 0.0002, 'epoch': 19.59}
+{'loss': 0.2009, 'learning_rate': 0.0002, 'epoch': 19.67}
+{'loss': 0.2284, 'learning_rate': 0.0002, 'epoch': 19.75}
+{'loss': 0.1468, 'learning_rate': 0.0002, 'epoch': 19.83}
+{'loss': 0.1898, 'learning_rate': 0.0002, 'epoch': 19.9}
+{'loss': 0.2431, 'learning_rate': 0.0002, 'epoch': 19.98}
+{'loss': 0.1495, 'learning_rate': 0.0002, 'epoch': 20.06}
+{'loss': 0.1595, 'learning_rate': 0.0002, 'epoch': 20.14}
+{'loss': 0.1985, 'learning_rate': 0.0002, 'epoch': 20.21}
+{'loss': 0.1752, 'learning_rate': 0.0002, 'epoch': 20.29}
+{'loss': 0.1572, 'learning_rate': 0.0002, 'epoch': 20.37}
+{'loss': 0.2043, 'learning_rate': 0.0002, 'epoch': 20.44}
+{'loss': 0.21, 'learning_rate': 0.0002, 'epoch': 20.52}
+{'loss': 0.1574, 'learning_rate': 0.0002, 'epoch': 20.6}
+{'loss': 0.1949, 'learning_rate': 0.0002, 'epoch': 20.68}
+{'loss': 0.2249, 'learning_rate': 0.0002, 'epoch': 20.75}
+{'loss': 0.1562, 'learning_rate': 0.0002, 'epoch': 20.83}
+{'loss': 0.1942, 'learning_rate': 0.0002, 'epoch': 20.91}
+{'loss': 0.246, 'learning_rate': 0.0002, 'epoch': 20.98}
+{'loss': 0.144, 'learning_rate': 0.0002, 'epoch': 21.06}
+{'loss': 0.1599, 'learning_rate': 0.0002, 'epoch': 21.14}
+{'loss': 0.1999, 'learning_rate': 0.0002, 'epoch': 21.22}
+Saving PEFT checkpoint...
+{'loss': 0.17, 'learning_rate': 0.0002, 'epoch': 21.29}
+{'loss': 0.1627, 'learning_rate': 0.0002, 'epoch': 21.37}
+{'loss': 0.2046, 'learning_rate': 0.0002, 'epoch': 21.45}
+{'loss': 0.2039, 'learning_rate': 0.0002, 'epoch': 21.52}
+{'loss': 0.1582, 'learning_rate': 0.0002, 'epoch': 21.6}
+{'loss': 0.1969, 'learning_rate': 0.0002, 'epoch': 21.68}
+{'loss': 0.2184, 'learning_rate': 0.0002, 'epoch': 21.76}
+{'loss': 0.1579, 'learning_rate': 0.0002, 'epoch': 21.83}
+{'loss': 0.2012, 'learning_rate': 0.0002, 'epoch': 21.91}
+{'loss': 0.2463, 'learning_rate': 0.0002, 'epoch': 21.99}
+{'loss': 0.1339, 'learning_rate': 0.0002, 'epoch': 22.06}
+{'loss': 0.1649, 'learning_rate': 0.0002, 'epoch': 22.14}
+{'loss': 0.2051, 'learning_rate': 0.0002, 'epoch': 22.22}
+{'loss': 0.1659, 'learning_rate': 0.0002, 'epoch': 22.3}
+{'loss': 0.1682, 'learning_rate': 0.0002, 'epoch': 22.37}
+{'loss': 0.1985, 'learning_rate': 0.0002, 'epoch': 22.45}
+{'loss': 0.1981, 'learning_rate': 0.0002, 'epoch': 22.53}
+{'loss': 0.1611, 'learning_rate': 0.0002, 'epoch': 22.6}
+{'loss': 0.1977, 'learning_rate': 0.0002, 'epoch': 22.68}
+{'loss': 0.219, 'learning_rate': 0.0002, 'epoch': 22.76}
+{'loss': 0.1525, 'learning_rate': 0.0002, 'epoch': 22.84}
+{'loss': 0.1993, 'learning_rate': 0.0002, 'epoch': 22.91}
+{'loss': 0.2457, 'learning_rate': 0.0002, 'epoch': 22.99}
+{'loss': 0.133, 'learning_rate': 0.0002, 'epoch': 23.07}
+{'loss': 0.1579, 'learning_rate': 0.0002, 'epoch': 23.14}
+Saving PEFT checkpoint...
+{'loss': 0.2037, 'learning_rate': 0.0002, 'epoch': 23.22}
+{'loss': 0.1575, 'learning_rate': 0.0002, 'epoch': 23.3}
+{'loss': 0.1622, 'learning_rate': 0.0002, 'epoch': 23.38}
+{'loss': 0.2026, 'learning_rate': 0.0002, 'epoch': 23.45}
+{'loss': 0.1918, 'learning_rate': 0.0002, 'epoch': 23.53}
+{'loss': 0.1605, 'learning_rate': 0.0002, 'epoch': 23.61}
+{'loss': 0.2043, 'learning_rate': 0.0002, 'epoch': 23.68}
+{'loss': 0.2183, 'learning_rate': 0.0002, 'epoch': 23.76}
+{'loss': 0.1593, 'learning_rate': 0.0002, 'epoch': 23.84}
+{'loss': 0.1971, 'learning_rate': 0.0002, 'epoch': 23.92}
+{'loss': 0.2453, 'learning_rate': 0.0002, 'epoch': 23.99}
+{'loss': 0.1371, 'learning_rate': 0.0002, 'epoch': 24.07}
+{'loss': 0.1565, 'learning_rate': 0.0002, 'epoch': 24.15}
+{'loss': 0.2114, 'learning_rate': 0.0002, 'epoch': 24.22}
+{'loss': 0.163, 'learning_rate': 0.0002, 'epoch': 24.3}
+{'loss': 0.1663, 'learning_rate': 0.0002, 'epoch': 24.38}
+{'loss': 0.2076, 'learning_rate': 0.0002, 'epoch': 24.46}
+{'loss': 0.1882, 'learning_rate': 0.0002, 'epoch': 24.53}
+{'loss': 0.1706, 'learning_rate': 0.0002, 'epoch': 24.61}
+{'loss': 0.1989, 'learning_rate': 0.0002, 'epoch': 24.69}
+{'loss': 0.2066, 'learning_rate': 0.0002, 'epoch': 24.76}
+{'loss': 0.1525, 'learning_rate': 0.0002, 'epoch': 24.84}
+{'loss': 0.1926, 'learning_rate': 0.0002, 'epoch': 24.92}
+{'loss': 0.2461, 'learning_rate': 0.0002, 'epoch': 25.0}
+{'loss': 0.1323, 'learning_rate': 0.0002, 'epoch': 25.07}
+Saving PEFT checkpoint...
+{'loss': 0.162, 'learning_rate': 0.0002, 'epoch': 25.15}
+{'loss': 0.2041, 'learning_rate': 0.0002, 'epoch': 25.23}
+{'loss': 0.157, 'learning_rate': 0.0002, 'epoch': 25.3}
+{'loss': 0.1668, 'learning_rate': 0.0002, 'epoch': 25.38}
+{'loss': 0.2061, 'learning_rate': 0.0002, 'epoch': 25.46}
+{'loss': 0.1827, 'learning_rate': 0.0002, 'epoch': 25.54}
+{'loss': 0.1609, 'learning_rate': 0.0002, 'epoch': 25.61}
+{'loss': 0.2006, 'learning_rate': 0.0002, 'epoch': 25.69}
+{'loss': 0.204, 'learning_rate': 0.0002, 'epoch': 25.77}
+{'loss': 0.1659, 'learning_rate': 0.0002, 'epoch': 25.84}
+{'loss': 0.1979, 'learning_rate': 0.0002, 'epoch': 25.92}
+{'loss': 0.2516, 'learning_rate': 0.0002, 'epoch': 26.0}
+{'loss': 0.1305, 'learning_rate': 0.0002, 'epoch': 26.08}
+{'loss': 0.1653, 'learning_rate': 0.0002, 'epoch': 26.15}
+{'loss': 0.1971, 'learning_rate': 0.0002, 'epoch': 26.23}
+{'loss': 0.1517, 'learning_rate': 0.0002, 'epoch': 26.31}
+{'loss': 0.165, 'learning_rate': 0.0002, 'epoch': 26.38}
+{'loss': 0.2068, 'learning_rate': 0.0002, 'epoch': 26.46}
+{'loss': 0.1807, 'learning_rate': 0.0002, 'epoch': 26.54}
+{'loss': 0.1697, 'learning_rate': 0.0002, 'epoch': 26.62}
+{'loss': 0.2051, 'learning_rate': 0.0002, 'epoch': 26.69}
+{'loss': 0.2, 'learning_rate': 0.0002, 'epoch': 26.77}
+{'loss': 0.1632, 'learning_rate': 0.0002, 'epoch': 26.85}
+{'loss': 0.1999, 'learning_rate': 0.0002, 'epoch': 26.92}
+{'loss': 0.2404, 'learning_rate': 0.0002, 'epoch': 27.0}
+Saving PEFT checkpoint...
+{'loss': 0.1272, 'learning_rate': 0.0002, 'epoch': 27.08}
+{'loss': 0.1659, 'learning_rate': 0.0002, 'epoch': 27.16}
+{'loss': 0.2047, 'learning_rate': 0.0002, 'epoch': 27.23}
+{'loss': 0.1552, 'learning_rate': 0.0002, 'epoch': 27.31}
+{'loss': 0.1714, 'learning_rate': 0.0002, 'epoch': 27.39}
+{'loss': 0.2133, 'learning_rate': 0.0002, 'epoch': 27.46}
+{'loss': 0.17, 'learning_rate': 0.0002, 'epoch': 27.54}
+{'loss': 0.1707, 'learning_rate': 0.0002, 'epoch': 27.62}
+{'loss': 0.2068, 'learning_rate': 0.0002, 'epoch': 27.7}
+{'loss': 0.1947, 'learning_rate': 0.0002, 'epoch': 27.77}
+{'loss': 0.1577, 'learning_rate': 0.0002, 'epoch': 27.85}
+{'loss': 0.1969, 'learning_rate': 0.0002, 'epoch': 27.93}
+{'loss': 0.2337, 'learning_rate': 0.0002, 'epoch': 28.0}
+{'loss': 0.134, 'learning_rate': 0.0002, 'epoch': 28.08}
+{'loss': 0.1743, 'learning_rate': 0.0002, 'epoch': 28.16}
+{'loss': 0.2118, 'learning_rate': 0.0002, 'epoch': 28.24}
+{'loss': 0.1451, 'learning_rate': 0.0002, 'epoch': 28.31}
+{'loss': 0.1761, 'learning_rate': 0.0002, 'epoch': 28.39}
+{'loss': 0.2076, 'learning_rate': 0.0002, 'epoch': 28.47}
+{'loss': 0.1689, 'learning_rate': 0.0002, 'epoch': 28.54}
+{'loss': 0.166, 'learning_rate': 0.0002, 'epoch': 28.62}
+{'loss': 0.211, 'learning_rate': 0.0002, 'epoch': 28.7}
+{'loss': 0.1937, 'learning_rate': 0.0002, 'epoch': 28.78}
+{'loss': 0.1602, 'learning_rate': 0.0002, 'epoch': 28.85}
+{'loss': 0.2048, 'learning_rate': 0.0002, 'epoch': 28.93}
+Saving PEFT checkpoint...
+{'loss': 0.2221, 'learning_rate': 0.0002, 'epoch': 29.01}
+{'loss': 0.1283, 'learning_rate': 0.0002, 'epoch': 29.08}
+{'loss': 0.1688, 'learning_rate': 0.0002, 'epoch': 29.16}
+{'loss': 0.2105, 'learning_rate': 0.0002, 'epoch': 29.24}
+{'loss': 0.1464, 'learning_rate': 0.0002, 'epoch': 29.32}
+{'loss': 0.178, 'learning_rate': 0.0002, 'epoch': 29.39}
+{'loss': 0.2184, 'learning_rate': 0.0002, 'epoch': 29.47}
+{'loss': 0.1591, 'learning_rate': 0.0002, 'epoch': 29.55}
+{'loss': 0.1706, 'learning_rate': 0.0002, 'epoch': 29.62}
+{'loss': 0.2147, 'learning_rate': 0.0002, 'epoch': 29.7}
+{'loss': 0.1862, 'learning_rate': 0.0002, 'epoch': 29.78}
+{'loss': 0.1688, 'learning_rate': 0.0002, 'epoch': 29.86}
+{'loss': 0.2039, 'learning_rate': 0.0002, 'epoch': 29.93}
+{'loss': 0.2239, 'learning_rate': 0.0002, 'epoch': 30.01}
+{'loss': 0.1235, 'learning_rate': 0.0002, 'epoch': 30.09}
+{'loss': 0.1693, 'learning_rate': 0.0002, 'epoch': 30.16}
+{'loss': 0.2164, 'learning_rate': 0.0002, 'epoch': 30.24}
+{'loss': 0.1428, 'learning_rate': 0.0002, 'epoch': 30.32}
+{'loss': 0.1708, 'learning_rate': 0.0002, 'epoch': 30.4}
+{'loss': 0.2152, 'learning_rate': 0.0002, 'epoch': 30.47}
+{'loss': 0.1676, 'learning_rate': 0.0002, 'epoch': 30.55}
+{'loss': 0.1691, 'learning_rate': 0.0002, 'epoch': 30.63}
+{'loss': 0.2129, 'learning_rate': 0.0002, 'epoch': 30.7}
+{'loss': 0.1888, 'learning_rate': 0.0002, 'epoch': 30.78}
+{'loss': 0.1632, 'learning_rate': 0.0002, 'epoch': 30.86}
+Saving PEFT checkpoint...
+{'loss': 0.2121, 'learning_rate': 0.0002, 'epoch': 30.94}
+{'loss': 0.2343, 'learning_rate': 0.0002, 'epoch': 31.01}
+{'loss': 0.1339, 'learning_rate': 0.0002, 'epoch': 31.09}
+{'loss': 0.1799, 'learning_rate': 0.0002, 'epoch': 31.17}
+{'loss': 0.2222, 'learning_rate': 0.0002, 'epoch': 31.24}
+{'loss': 0.1379, 'learning_rate': 0.0002, 'epoch': 31.32}
+{'loss': 0.1823, 'learning_rate': 0.0002, 'epoch': 31.4}
+{'loss': 0.216, 'learning_rate': 0.0002, 'epoch': 31.48}
+{'loss': 0.1614, 'learning_rate': 0.0002, 'epoch': 31.55}
+{'loss': 0.1722, 'learning_rate': 0.0002, 'epoch': 31.63}
+{'loss': 0.2082, 'learning_rate': 0.0002, 'epoch': 31.71}
+{'loss': 0.1806, 'learning_rate': 0.0002, 'epoch': 31.78}
+{'loss': 0.1644, 'learning_rate': 0.0002, 'epoch': 31.86}
+{'loss': 0.2132, 'learning_rate': 0.0002, 'epoch': 31.94}
+{'loss': 0.212, 'learning_rate': 0.0002, 'epoch': 32.02}
+{'loss': 0.1399, 'learning_rate': 0.0002, 'epoch': 32.09}
+{'loss': 0.1725, 'learning_rate': 0.0002, 'epoch': 32.17}
+{'loss': 0.2166, 'learning_rate': 0.0002, 'epoch': 32.25}
+{'loss': 0.1339, 'learning_rate': 0.0002, 'epoch': 32.32}
+{'loss': 0.1778, 'learning_rate': 0.0002, 'epoch': 32.4}
+{'loss': 0.2168, 'learning_rate': 0.0002, 'epoch': 32.48}
+{'loss': 0.1564, 'learning_rate': 0.0002, 'epoch': 32.56}
+{'loss': 0.1806, 'learning_rate': 0.0002, 'epoch': 32.63}
+{'loss': 0.2214, 'learning_rate': 0.0002, 'epoch': 32.71}
+{'loss': 0.1751, 'learning_rate': 0.0002, 'epoch': 32.79}
+Saving PEFT checkpoint...
+{'loss': 0.1675, 'learning_rate': 0.0002, 'epoch': 32.86}
+{'loss': 0.2075, 'learning_rate': 0.0002, 'epoch': 32.94}
+{'loss': 0.2067, 'learning_rate': 0.0002, 'epoch': 33.02}
+{'loss': 0.1357, 'learning_rate': 0.0002, 'epoch': 33.1}
+{'loss': 0.1758, 'learning_rate': 0.0002, 'epoch': 33.17}
+{'loss': 0.2166, 'learning_rate': 0.0002, 'epoch': 33.25}
+{'loss': 0.1293, 'learning_rate': 0.0002, 'epoch': 33.33}
+{'loss': 0.1837, 'learning_rate': 0.0002, 'epoch': 33.4}
+{'loss': 0.2234, 'learning_rate': 0.0002, 'epoch': 33.48}
+{'loss': 0.1479, 'learning_rate': 0.0002, 'epoch': 33.56}
+{'loss': 0.1747, 'learning_rate': 0.0002, 'epoch': 33.64}
+{'loss': 0.2092, 'learning_rate': 0.0002, 'epoch': 33.71}
+{'loss': 0.1758, 'learning_rate': 0.0002, 'epoch': 33.79}
+{'loss': 0.1669, 'learning_rate': 0.0002, 'epoch': 33.87}
+{'loss': 0.2167, 'learning_rate': 0.0002, 'epoch': 33.94}
+{'loss': 0.2078, 'learning_rate': 0.0002, 'epoch': 34.02}
+{'loss': 0.1392, 'learning_rate': 0.0002, 'epoch': 34.1}
+{'loss': 0.1749, 'learning_rate': 0.0002, 'epoch': 34.18}
+{'loss': 0.2096, 'learning_rate': 0.0002, 'epoch': 34.25}
+{'loss': 0.1354, 'learning_rate': 0.0002, 'epoch': 34.33}
+{'loss': 0.1748, 'learning_rate': 0.0002, 'epoch': 34.41}
+{'loss': 0.2274, 'learning_rate': 0.0002, 'epoch': 34.48}
+{'loss': 0.1493, 'learning_rate': 0.0002, 'epoch': 34.56}
+{'loss': 0.1702, 'learning_rate': 0.0002, 'epoch': 34.64}
+{'loss': 0.2089, 'learning_rate': 0.0002, 'epoch': 34.72}
+Saving PEFT checkpoint...
+{'loss': 0.1666, 'learning_rate': 0.0002, 'epoch': 34.79}
+{'loss': 0.175, 'learning_rate': 0.0002, 'epoch': 34.87}
+{'loss': 0.2061, 'learning_rate': 0.0002, 'epoch': 34.95}
+{'loss': 0.1942, 'learning_rate': 0.0002, 'epoch': 35.02}
+{'loss': 0.1344, 'learning_rate': 0.0002, 'epoch': 35.1}
+{'loss': 0.1684, 'learning_rate': 0.0002, 'epoch': 35.18}
+{'loss': 0.2032, 'learning_rate': 0.0002, 'epoch': 35.26}
+{'loss': 0.1377, 'learning_rate': 0.0002, 'epoch': 35.33}
+{'loss': 0.1725, 'learning_rate': 0.0002, 'epoch': 35.41}
+{'loss': 0.2238, 'learning_rate': 0.0002, 'epoch': 35.49}
+{'loss': 0.1453, 'learning_rate': 0.0002, 'epoch': 35.56}
+{'loss': 0.1781, 'learning_rate': 0.0002, 'epoch': 35.64}
+{'loss': 0.2229, 'learning_rate': 0.0002, 'epoch': 35.72}
+{'loss': 0.1643, 'learning_rate': 0.0002, 'epoch': 35.8}
+{'loss': 0.1656, 'learning_rate': 0.0002, 'epoch': 35.87}
+{'loss': 0.2091, 'learning_rate': 0.0002, 'epoch': 35.95}
+{'loss': 0.1924, 'learning_rate': 0.0002, 'epoch': 36.03}
+{'loss': 0.1385, 'learning_rate': 0.0002, 'epoch': 36.1}
+{'loss': 0.1776, 'learning_rate': 0.0002, 'epoch': 36.18}
+{'loss': 0.1991, 'learning_rate': 0.0002, 'epoch': 36.26}
+{'loss': 0.132, 'learning_rate': 0.0002, 'epoch': 36.34}
+{'loss': 0.1772, 'learning_rate': 0.0002, 'epoch': 36.41}
+{'loss': 0.2162, 'learning_rate': 0.0002, 'epoch': 36.49}
+{'loss': 0.1384, 'learning_rate': 0.0002, 'epoch': 36.57}
+{'loss': 0.17, 'learning_rate': 0.0002, 'epoch': 36.64}
+Saving PEFT checkpoint...
+{'loss': 0.224, 'learning_rate': 0.0002, 'epoch': 36.72}
+{'loss': 0.1591, 'learning_rate': 0.0002, 'epoch': 36.8}
+{'loss': 0.1676, 'learning_rate': 0.0002, 'epoch': 36.88}
+{'loss': 0.2067, 'learning_rate': 0.0002, 'epoch': 36.95}
+{'loss': 0.1887, 'learning_rate': 0.0002, 'epoch': 37.03}
+{'loss': 0.1358, 'learning_rate': 0.0002, 'epoch': 37.11}
+{'loss': 0.174, 'learning_rate': 0.0002, 'epoch': 37.18}
+{'loss': 0.2001, 'learning_rate': 0.0002, 'epoch': 37.26}
+{'loss': 0.1317, 'learning_rate': 0.0002, 'epoch': 37.34}
+{'loss': 0.1751, 'learning_rate': 0.0002, 'epoch': 37.42}
+{'loss': 0.227, 'learning_rate': 0.0002, 'epoch': 37.49}
+{'loss': 0.1317, 'learning_rate': 0.0002, 'epoch': 37.57}
+{'loss': 0.173, 'learning_rate': 0.0002, 'epoch': 37.65}
+{'loss': 0.2204, 'learning_rate': 0.0002, 'epoch': 37.72}
+{'loss': 0.1528, 'learning_rate': 0.0002, 'epoch': 37.8}
+{'loss': 0.1701, 'learning_rate': 0.0002, 'epoch': 37.88}
+{'loss': 0.2163, 'learning_rate': 0.0002, 'epoch': 37.96}
+{'loss': 0.179, 'learning_rate': 0.0002, 'epoch': 38.03}
+{'loss': 0.1388, 'learning_rate': 0.0002, 'epoch': 38.11}
+{'loss': 0.1783, 'learning_rate': 0.0002, 'epoch': 38.19}
+{'loss': 0.1976, 'learning_rate': 0.0002, 'epoch': 38.26}
+{'loss': 0.1409, 'learning_rate': 0.0002, 'epoch': 38.34}
+{'loss': 0.179, 'learning_rate': 0.0002, 'epoch': 38.42}
+{'loss': 0.2255, 'learning_rate': 0.0002, 'epoch': 38.5}
+{'loss': 0.1295, 'learning_rate': 0.0002, 'epoch': 38.57}
+Saving PEFT checkpoint...
+{'loss': 0.1714, 'learning_rate': 0.0002, 'epoch': 38.65}
+{'loss': 0.2172, 'learning_rate': 0.0002, 'epoch': 38.73}
+{'loss': 0.1528, 'learning_rate': 0.0002, 'epoch': 38.8}
+{'loss': 0.1699, 'learning_rate': 0.0002, 'epoch': 38.88}
+{'loss': 0.2199, 'learning_rate': 0.0002, 'epoch': 38.96}
+{'loss': 0.1739, 'learning_rate': 0.0002, 'epoch': 39.04}
+{'loss': 0.1422, 'learning_rate': 0.0002, 'epoch': 39.11}
+{'loss': 0.1818, 'learning_rate': 0.0002, 'epoch': 39.19}
+{'loss': 0.193, 'learning_rate': 0.0002, 'epoch': 39.27}
+{'loss': 0.1367, 'learning_rate': 0.0002, 'epoch': 39.34}
+{'loss': 0.1786, 'learning_rate': 0.0002, 'epoch': 39.42}
+{'loss': 0.223, 'learning_rate': 0.0002, 'epoch': 39.5}
+{'loss': 0.1364, 'learning_rate': 0.0002, 'epoch': 39.58}
+{'loss': 0.1751, 'learning_rate': 0.0002, 'epoch': 39.65}
+{'loss': 0.2205, 'learning_rate': 0.0002, 'epoch': 39.73}
+{'loss': 0.1467, 'learning_rate': 0.0002, 'epoch': 39.81}
+{'loss': 0.1682, 'learning_rate': 0.0002, 'epoch': 39.88}
+{'loss': 0.2177, 'learning_rate': 0.0002, 'epoch': 39.96}
+{'loss': 0.1658, 'learning_rate': 0.0002, 'epoch': 40.04}
+{'loss': 0.1468, 'learning_rate': 0.0002, 'epoch': 40.12}
+{'loss': 0.1886, 'learning_rate': 0.0002, 'epoch': 40.19}
+{'loss': 0.1878, 'learning_rate': 0.0002, 'epoch': 40.27}
+{'loss': 0.142, 'learning_rate': 0.0002, 'epoch': 40.35}
+{'loss': 0.1791, 'learning_rate': 0.0002, 'epoch': 40.42}
+{'loss': 0.2135, 'learning_rate': 0.0002, 'epoch': 40.5}
+Saving PEFT checkpoint...
+{'loss': 0.132, 'learning_rate': 0.0002, 'epoch': 40.58}
+{'loss': 0.1757, 'learning_rate': 0.0002, 'epoch': 40.66}
+{'loss': 0.2201, 'learning_rate': 0.0002, 'epoch': 40.73}
+{'loss': 0.1406, 'learning_rate': 0.0002, 'epoch': 40.81}
+{'loss': 0.174, 'learning_rate': 0.0002, 'epoch': 40.89}
+{'loss': 0.2283, 'learning_rate': 0.0002, 'epoch': 40.96}
+{'loss': 0.1669, 'learning_rate': 0.0002, 'epoch': 41.04}
+{'loss': 0.1447, 'learning_rate': 0.0002, 'epoch': 41.12}
+{'loss': 0.1805, 'learning_rate': 0.0002, 'epoch': 41.2}
+{'loss': 0.1838, 'learning_rate': 0.0002, 'epoch': 41.27}
+{'loss': 0.1429, 'learning_rate': 0.0002, 'epoch': 41.35}
+{'loss': 0.1814, 'learning_rate': 0.0002, 'epoch': 41.43}
+{'loss': 0.2144, 'learning_rate': 0.0002, 'epoch': 41.5}
+{'loss': 0.1394, 'learning_rate': 0.0002, 'epoch': 41.58}
+{'loss': 0.1807, 'learning_rate': 0.0002, 'epoch': 41.66}
+{'loss': 0.2296, 'learning_rate': 0.0002, 'epoch': 41.74}
+{'loss': 0.1405, 'learning_rate': 0.0002, 'epoch': 41.81}
+{'loss': 0.1789, 'learning_rate': 0.0002, 'epoch': 41.89}
+{'loss': 0.2175, 'learning_rate': 0.0002, 'epoch': 41.97}
+{'loss': 0.162, 'learning_rate': 0.0002, 'epoch': 42.04}
+{'loss': 0.149, 'learning_rate': 0.0002, 'epoch': 42.12}
+{'loss': 0.1843, 'learning_rate': 0.0002, 'epoch': 42.2}
+{'loss': 0.1808, 'learning_rate': 0.0002, 'epoch': 42.28}
+{'loss': 0.1487, 'learning_rate': 0.0002, 'epoch': 42.35}
+{'loss': 0.1863, 'learning_rate': 0.0002, 'epoch': 42.43}
+Saving PEFT checkpoint...
+{'loss': 0.2071, 'learning_rate': 0.0002, 'epoch': 42.51}
+{'loss': 0.1402, 'learning_rate': 0.0002, 'epoch': 42.58}
+{'loss': 0.1839, 'learning_rate': 0.0002, 'epoch': 42.66}
+{'loss': 0.2311, 'learning_rate': 0.0002, 'epoch': 42.74}
+{'loss': 0.1294, 'learning_rate': 0.0002, 'epoch': 42.82}
+{'loss': 0.1725, 'learning_rate': 0.0002, 'epoch': 42.89}
+{'loss': 0.2249, 'learning_rate': 0.0002, 'epoch': 42.97}
+{'loss': 0.1562, 'learning_rate': 0.0002, 'epoch': 43.05}
+{'loss': 0.1431, 'learning_rate': 0.0002, 'epoch': 43.12}
+{'loss': 0.1909, 'learning_rate': 0.0002, 'epoch': 43.2}
+{'loss': 0.1747, 'learning_rate': 0.0002, 'epoch': 43.28}
+{'loss': 0.1496, 'learning_rate': 0.0002, 'epoch': 43.36}
+{'loss': 0.1848, 'learning_rate': 0.0002, 'epoch': 43.43}
+{'loss': 0.2027, 'learning_rate': 0.0002, 'epoch': 43.51}
+{'loss': 0.1408, 'learning_rate': 0.0002, 'epoch': 43.59}
+{'loss': 0.1809, 'learning_rate': 0.0002, 'epoch': 43.66}
+{'loss': 0.2328, 'learning_rate': 0.0002, 'epoch': 43.74}
+{'loss': 0.1336, 'learning_rate': 0.0002, 'epoch': 43.82}
+{'loss': 0.183, 'learning_rate': 0.0002, 'epoch': 43.9}
+{'loss': 0.2286, 'learning_rate': 0.0002, 'epoch': 43.97}
+{'loss': 0.1593, 'learning_rate': 0.0002, 'epoch': 44.05}
+{'loss': 0.1474, 'learning_rate': 0.0002, 'epoch': 44.13}
+{'loss': 0.1932, 'learning_rate': 0.0002, 'epoch': 44.2}
+{'loss': 0.1797, 'learning_rate': 0.0002, 'epoch': 44.28}
+{'loss': 0.148, 'learning_rate': 0.0002, 'epoch': 44.36}
+Saving PEFT checkpoint...
+{'loss': 0.192, 'learning_rate': 0.0002, 'epoch': 44.44}
+{'loss': 0.2004, 'learning_rate': 0.0002, 'epoch': 44.51}
+{'loss': 0.1426, 'learning_rate': 0.0002, 'epoch': 44.59}
+{'loss': 0.1887, 'learning_rate': 0.0002, 'epoch': 44.67}
+{'loss': 0.2231, 'learning_rate': 0.0002, 'epoch': 44.74}
+{'loss': 0.133, 'learning_rate': 0.0002, 'epoch': 44.82}
+{'loss': 0.1864, 'learning_rate': 0.0002, 'epoch': 44.9}
+{'loss': 0.2256, 'learning_rate': 0.0002, 'epoch': 44.98}
+{'loss': 0.1453, 'learning_rate': 0.0002, 'epoch': 45.05}
+{'loss': 0.1521, 'learning_rate': 0.0002, 'epoch': 45.13}
+{'loss': 0.1899, 'learning_rate': 0.0002, 'epoch': 45.21}
+{'loss': 0.177, 'learning_rate': 0.0002, 'epoch': 45.28}
+{'loss': 0.1472, 'learning_rate': 0.0002, 'epoch': 45.36}
+{'loss': 0.1852, 'learning_rate': 0.0002, 'epoch': 45.44}
+{'loss': 0.1942, 'learning_rate': 0.0002, 'epoch': 45.52}
+{'loss': 0.1417, 'learning_rate': 0.0002, 'epoch': 45.59}
+{'loss': 0.1851, 'learning_rate': 0.0002, 'epoch': 45.67}
+{'loss': 0.2127, 'learning_rate': 0.0002, 'epoch': 45.75}
+{'loss': 0.1396, 'learning_rate': 0.0002, 'epoch': 45.82}
+{'loss': 0.1843, 'learning_rate': 0.0002, 'epoch': 45.9}
+{'loss': 0.2259, 'learning_rate': 0.0002, 'epoch': 45.98}
+{'loss': 0.1401, 'learning_rate': 0.0002, 'epoch': 46.06}
+{'loss': 0.1529, 'learning_rate': 0.0002, 'epoch': 46.13}
+{'loss': 0.1881, 'learning_rate': 0.0002, 'epoch': 46.21}
+{'loss': 0.1659, 'learning_rate': 0.0002, 'epoch': 46.29}
+Saving PEFT checkpoint...
+{'loss': 0.1476, 'learning_rate': 0.0002, 'epoch': 46.36}
+{'loss': 0.1891, 'learning_rate': 0.0002, 'epoch': 46.44}
+{'loss': 0.1895, 'learning_rate': 0.0002, 'epoch': 46.52}
+{'loss': 0.1458, 'learning_rate': 0.0002, 'epoch': 46.6}
+{'loss': 0.1881, 'learning_rate': 0.0002, 'epoch': 46.67}
+{'loss': 0.2115, 'learning_rate': 0.0002, 'epoch': 46.75}
+{'loss': 0.1343, 'learning_rate': 0.0002, 'epoch': 46.83}
+{'loss': 0.1766, 'learning_rate': 0.0002, 'epoch': 46.9}
+{'loss': 0.2275, 'learning_rate': 0.0002, 'epoch': 46.98}
+{'loss': 0.1359, 'learning_rate': 0.0002, 'epoch': 47.06}
+{'loss': 0.1492, 'learning_rate': 0.0002, 'epoch': 47.14}
+{'loss': 0.1921, 'learning_rate': 0.0002, 'epoch': 47.21}
+{'loss': 0.1659, 'learning_rate': 0.0002, 'epoch': 47.29}
+{'loss': 0.1531, 'learning_rate': 0.0002, 'epoch': 47.37}
+{'loss': 0.1826, 'learning_rate': 0.0002, 'epoch': 47.44}
+{'loss': 0.186, 'learning_rate': 0.0002, 'epoch': 47.52}
+{'loss': 0.1455, 'learning_rate': 0.0002, 'epoch': 47.6}
+{'loss': 0.1857, 'learning_rate': 0.0002, 'epoch': 47.68}
+{'loss': 0.2114, 'learning_rate': 0.0002, 'epoch': 47.75}
+{'loss': 0.1414, 'learning_rate': 0.0002, 'epoch': 47.83}
+{'loss': 0.1791, 'learning_rate': 0.0002, 'epoch': 47.91}
+{'loss': 0.2304, 'learning_rate': 0.0002, 'epoch': 47.98}
+{'loss': 0.1281, 'learning_rate': 0.0002, 'epoch': 48.06}
+{'loss': 0.1526, 'learning_rate': 0.0002, 'epoch': 48.14}
+{'loss': 0.1918, 'learning_rate': 0.0002, 'epoch': 48.22}
+Saving PEFT checkpoint...
+{'loss': 0.1567, 'learning_rate': 0.0002, 'epoch': 48.29}
+{'loss': 0.1525, 'learning_rate': 0.0002, 'epoch': 48.37}
+{'loss': 0.1894, 'learning_rate': 0.0002, 'epoch': 48.45}
+{'loss': 0.1799, 'learning_rate': 0.0002, 'epoch': 48.52}
+{'loss': 0.1502, 'learning_rate': 0.0002, 'epoch': 48.6}
+{'loss': 0.1928, 'learning_rate': 0.0002, 'epoch': 48.68}
+{'loss': 0.2124, 'learning_rate': 0.0002, 'epoch': 48.76}
+{'loss': 0.1407, 'learning_rate': 0.0002, 'epoch': 48.83}
+{'loss': 0.1891, 'learning_rate': 0.0002, 'epoch': 48.91}
+{'loss': 0.2355, 'learning_rate': 0.0002, 'epoch': 48.99}
+{'loss': 0.1256, 'learning_rate': 0.0002, 'epoch': 49.06}
+{'loss': 0.1563, 'learning_rate': 0.0002, 'epoch': 49.14}
+{'loss': 0.1966, 'learning_rate': 0.0002, 'epoch': 49.22}
+{'loss': 0.1665, 'learning_rate': 0.0002, 'epoch': 49.3}
+{'loss': 0.1573, 'learning_rate': 0.0002, 'epoch': 49.37}
+{'loss': 0.1962, 'learning_rate': 0.0002, 'epoch': 49.45}
+{'loss': 0.1784, 'learning_rate': 0.0002, 'epoch': 49.53}
+{'loss': 0.1519, 'learning_rate': 0.0002, 'epoch': 49.6}
+{'loss': 0.1919, 'learning_rate': 0.0002, 'epoch': 49.68}
+{'loss': 0.2027, 'learning_rate': 0.0002, 'epoch': 49.76}
+{'loss': 0.1454, 'learning_rate': 0.0002, 'epoch': 49.84}
+{'loss': 0.1884, 'learning_rate': 0.0002, 'epoch': 49.91}
+{'loss': 0.229, 'learning_rate': 0.0002, 'epoch': 49.99}
+{'loss': 0.1274, 'learning_rate': 0.0002, 'epoch': 50.07}
+{'loss': 0.1565, 'learning_rate': 0.0002, 'epoch': 50.14}
+Saving PEFT checkpoint...
+{'loss': 0.1985, 'learning_rate': 0.0002, 'epoch': 50.22}
+{'loss': 0.1613, 'learning_rate': 0.0002, 'epoch': 50.3}
+{'loss': 0.1536, 'learning_rate': 0.0002, 'epoch': 50.38}
+{'loss': 0.2009, 'learning_rate': 0.0002, 'epoch': 50.45}
+{'loss': 0.1778, 'learning_rate': 0.0002, 'epoch': 50.53}
+{'loss': 0.1511, 'learning_rate': 0.0002, 'epoch': 50.61}
+{'loss': 0.1927, 'learning_rate': 0.0002, 'epoch': 50.68}
+{'loss': 0.2012, 'learning_rate': 0.0002, 'epoch': 50.76}
+{'loss': 0.1495, 'learning_rate': 0.0002, 'epoch': 50.84}
+{'loss': 0.1898, 'learning_rate': 0.0002, 'epoch': 50.92}
+{'loss': 0.2383, 'learning_rate': 0.0002, 'epoch': 50.99}
+{'loss': 0.1287, 'learning_rate': 0.0002, 'epoch': 51.07}
+{'loss': 0.1644, 'learning_rate': 0.0002, 'epoch': 51.15}
+{'loss': 0.2115, 'learning_rate': 0.0002, 'epoch': 51.22}
+{'loss': 0.1573, 'learning_rate': 0.0002, 'epoch': 51.3}
+{'loss': 0.1623, 'learning_rate': 0.0002, 'epoch': 51.38}
+{'loss': 0.1995, 'learning_rate': 0.0002, 'epoch': 51.46}
+{'loss': 0.1784, 'learning_rate': 0.0002, 'epoch': 51.53}
+{'loss': 0.1559, 'learning_rate': 0.0002, 'epoch': 51.61}
+{'loss': 0.1959, 'learning_rate': 0.0002, 'epoch': 51.69}
+{'loss': 0.202, 'learning_rate': 0.0002, 'epoch': 51.76}
+{'loss': 0.1514, 'learning_rate': 0.0002, 'epoch': 51.84}
+{'loss': 0.1903, 'learning_rate': 0.0002, 'epoch': 51.92}
+{'loss': 0.2373, 'learning_rate': 0.0002, 'epoch': 52.0}
+{'loss': 0.1285, 'learning_rate': 0.0002, 'epoch': 52.07}
+Saving PEFT checkpoint...
+{'loss': 0.1564, 'learning_rate': 0.0002, 'epoch': 52.15}
+{'loss': 0.2058, 'learning_rate': 0.0002, 'epoch': 52.23}
+{'loss': 0.1518, 'learning_rate': 0.0002, 'epoch': 52.3}
+{'loss': 0.163, 'learning_rate': 0.0002, 'epoch': 52.38}
+{'loss': 0.1996, 'learning_rate': 0.0002, 'epoch': 52.46}
+{'loss': 0.1779, 'learning_rate': 0.0002, 'epoch': 52.54}
+{'loss': 0.1568, 'learning_rate': 0.0002, 'epoch': 52.61}
+{'loss': 0.1999, 'learning_rate': 0.0002, 'epoch': 52.69}
+{'loss': 0.2028, 'learning_rate': 0.0002, 'epoch': 52.77}
+{'loss': 0.1493, 'learning_rate': 0.0002, 'epoch': 52.84}
+{'loss': 0.1838, 'learning_rate': 0.0002, 'epoch': 52.92}
+{'loss': 0.2221, 'learning_rate': 0.0002, 'epoch': 53.0}
+{'loss': 0.1211, 'learning_rate': 0.0002, 'epoch': 53.08}
+{'loss': 0.1631, 'learning_rate': 0.0002, 'epoch': 53.15}
+{'loss': 0.2035, 'learning_rate': 0.0002, 'epoch': 53.23}
+{'loss': 0.1414, 'learning_rate': 0.0002, 'epoch': 53.31}
+{'loss': 0.1642, 'learning_rate': 0.0002, 'epoch': 53.38}
+{'loss': 0.1975, 'learning_rate': 0.0002, 'epoch': 53.46}
+{'loss': 0.1691, 'learning_rate': 0.0002, 'epoch': 53.54}
+{'loss': 0.154, 'learning_rate': 0.0002, 'epoch': 53.62}
+{'loss': 0.19, 'learning_rate': 0.0002, 'epoch': 53.69}
+{'loss': 0.1894, 'learning_rate': 0.0002, 'epoch': 53.77}
+{'loss': 0.1547, 'learning_rate': 0.0002, 'epoch': 53.85}
+{'loss': 0.1911, 'learning_rate': 0.0002, 'epoch': 53.92}
+{'loss': 0.2262, 'learning_rate': 0.0002, 'epoch': 54.0}
+Saving PEFT checkpoint...
+{'loss': 0.1203, 'learning_rate': 0.0002, 'epoch': 54.08}
+{'loss': 0.1632, 'learning_rate': 0.0002, 'epoch': 54.16}
+{'loss': 0.2052, 'learning_rate': 0.0002, 'epoch': 54.23}
+{'loss': 0.1414, 'learning_rate': 0.0002, 'epoch': 54.31}
+{'loss': 0.1615, 'learning_rate': 0.0002, 'epoch': 54.39}
+{'loss': 0.1989, 'learning_rate': 0.0002, 'epoch': 54.46}
+{'loss': 0.1625, 'learning_rate': 0.0002, 'epoch': 54.54}
+{'loss': 0.1555, 'learning_rate': 0.0002, 'epoch': 54.62}
+{'loss': 0.1923, 'learning_rate': 0.0002, 'epoch': 54.7}
+{'loss': 0.1887, 'learning_rate': 0.0002, 'epoch': 54.77}
+{'loss': 0.1561, 'learning_rate': 0.0002, 'epoch': 54.85}
+{'loss': 0.1922, 'learning_rate': 0.0002, 'epoch': 54.93}
+{'loss': 0.2229, 'learning_rate': 0.0002, 'epoch': 55.0}
+{'loss': 0.1276, 'learning_rate': 0.0002, 'epoch': 55.08}
+{'loss': 0.1564, 'learning_rate': 0.0002, 'epoch': 55.16}
+{'loss': 0.1955, 'learning_rate': 0.0002, 'epoch': 55.24}
+{'loss': 0.1364, 'learning_rate': 0.0002, 'epoch': 55.31}
+{'loss': 0.1656, 'learning_rate': 0.0002, 'epoch': 55.39}
+{'loss': 0.2025, 'learning_rate': 0.0002, 'epoch': 55.47}
+{'loss': 0.1606, 'learning_rate': 0.0002, 'epoch': 55.54}
+{'loss': 0.1586, 'learning_rate': 0.0002, 'epoch': 55.62}
+{'loss': 0.1989, 'learning_rate': 0.0002, 'epoch': 55.7}
+{'loss': 0.1862, 'learning_rate': 0.0002, 'epoch': 55.78}
+{'loss': 0.154, 'learning_rate': 0.0002, 'epoch': 55.85}
+{'loss': 0.196, 'learning_rate': 0.0002, 'epoch': 55.93}
+Saving PEFT checkpoint...
+{'loss': 0.2122, 'learning_rate': 0.0002, 'epoch': 56.01}
+{'loss': 0.1283, 'learning_rate': 0.0002, 'epoch': 56.08}
+{'loss': 0.1683, 'learning_rate': 0.0002, 'epoch': 56.16}
+{'loss': 0.2054, 'learning_rate': 0.0002, 'epoch': 56.24}
+{'loss': 0.128, 'learning_rate': 0.0002, 'epoch': 56.32}
+{'loss': 0.1634, 'learning_rate': 0.0002, 'epoch': 56.39}
+{'loss': 0.2001, 'learning_rate': 0.0002, 'epoch': 56.47}
+{'loss': 0.1543, 'learning_rate': 0.0002, 'epoch': 56.55}
+{'loss': 0.1578, 'learning_rate': 0.0002, 'epoch': 56.62}
+{'loss': 0.1978, 'learning_rate': 0.0002, 'epoch': 56.7}
+{'loss': 0.1792, 'learning_rate': 0.0002, 'epoch': 56.78}
+{'loss': 0.1536, 'learning_rate': 0.0002, 'epoch': 56.86}
+{'loss': 0.1937, 'learning_rate': 0.0002, 'epoch': 56.93}
+{'loss': 0.2089, 'learning_rate': 0.0002, 'epoch': 57.01}
+{'loss': 0.1255, 'learning_rate': 0.0002, 'epoch': 57.09}
+{'loss': 0.1601, 'learning_rate': 0.0002, 'epoch': 57.16}
+{'loss': 0.2083, 'learning_rate': 0.0002, 'epoch': 57.24}
+{'loss': 0.1301, 'learning_rate': 0.0002, 'epoch': 57.32}
+{'loss': 0.1684, 'learning_rate': 0.0002, 'epoch': 57.4}
+{'loss': 0.2049, 'learning_rate': 0.0002, 'epoch': 57.47}
+{'loss': 0.1526, 'learning_rate': 0.0002, 'epoch': 57.55}
+{'loss': 0.1629, 'learning_rate': 0.0002, 'epoch': 57.63}
+{'loss': 0.2021, 'learning_rate': 0.0002, 'epoch': 57.7}
+{'loss': 0.1725, 'learning_rate': 0.0002, 'epoch': 57.78}
+{'loss': 0.1563, 'learning_rate': 0.0002, 'epoch': 57.86}
+Saving PEFT checkpoint...
+{'loss': 0.1987, 'learning_rate': 0.0002, 'epoch': 57.94}
+{'loss': 0.2062, 'learning_rate': 0.0002, 'epoch': 58.01}
+{'loss': 0.1221, 'learning_rate': 0.0002, 'epoch': 58.09}
+{'loss': 0.1638, 'learning_rate': 0.0002, 'epoch': 58.17}
+{'loss': 0.2044, 'learning_rate': 0.0002, 'epoch': 58.24}
+{'loss': 0.1267, 'learning_rate': 0.0002, 'epoch': 58.32}
+{'loss': 0.1621, 'learning_rate': 0.0002, 'epoch': 58.4}
+{'loss': 0.2113, 'learning_rate': 0.0002, 'epoch': 58.48}
+{'loss': 0.1475, 'learning_rate': 0.0002, 'epoch': 58.55}
+{'loss': 0.1638, 'learning_rate': 0.0002, 'epoch': 58.63}
+{'loss': 0.2064, 'learning_rate': 0.0002, 'epoch': 58.71}
+{'loss': 0.1719, 'learning_rate': 0.0002, 'epoch': 58.78}
+{'loss': 0.1563, 'learning_rate': 0.0002, 'epoch': 58.86}
+{'loss': 0.1962, 'learning_rate': 0.0002, 'epoch': 58.94}
+{'loss': 0.1974, 'learning_rate': 0.0002, 'epoch': 59.02}
+{'loss': 0.1267, 'learning_rate': 0.0002, 'epoch': 59.09}
+{'loss': 0.1675, 'learning_rate': 0.0002, 'epoch': 59.17}
+{'loss': 0.2037, 'learning_rate': 0.0002, 'epoch': 59.25}
+{'loss': 0.1208, 'learning_rate': 0.0002, 'epoch': 59.32}
+{'loss': 0.1667, 'learning_rate': 0.0002, 'epoch': 59.4}
+{'loss': 0.2125, 'learning_rate': 0.0002, 'epoch': 59.48}
+{'loss': 0.1445, 'learning_rate': 0.0002, 'epoch': 59.56}
+{'loss': 0.1616, 'learning_rate': 0.0002, 'epoch': 59.63}
+{'loss': 0.2032, 'learning_rate': 0.0002, 'epoch': 59.71}
+{'loss': 0.1621, 'learning_rate': 0.0002, 'epoch': 59.79}
+Saving PEFT checkpoint...
+{'loss': 0.1585, 'learning_rate': 0.0002, 'epoch': 59.86}
+{'loss': 0.1969, 'learning_rate': 0.0002, 'epoch': 59.94}
+{'loss': 0.1947, 'learning_rate': 0.0002, 'epoch': 60.02}
+{'loss': 0.1299, 'learning_rate': 0.0002, 'epoch': 60.1}
+{'loss': 0.161, 'learning_rate': 0.0002, 'epoch': 60.17}
+{'loss': 0.2056, 'learning_rate': 0.0002, 'epoch': 60.25}
+{'loss': 0.1212, 'learning_rate': 0.0002, 'epoch': 60.33}
+{'loss': 0.1635, 'learning_rate': 0.0002, 'epoch': 60.41}
+{'loss': 0.2075, 'learning_rate': 0.0002, 'epoch': 60.48}
+{'loss': 0.1428, 'learning_rate': 0.0002, 'epoch': 60.56}
+{'loss': 0.1637, 'learning_rate': 0.0002, 'epoch': 60.64}
+{'loss': 0.2042, 'learning_rate': 0.0002, 'epoch': 60.71}
+{'loss': 0.1648, 'learning_rate': 0.0002, 'epoch': 60.79}
+{'loss': 0.1582, 'learning_rate': 0.0002, 'epoch': 60.87}
+{'loss': 0.2002, 'learning_rate': 0.0002, 'epoch': 60.95}
+{'loss': 0.1951, 'learning_rate': 0.0002, 'epoch': 61.02}
+{'loss': 0.1292, 'learning_rate': 0.0002, 'epoch': 61.1}
+{'loss': 0.1633, 'learning_rate': 0.0002, 'epoch': 61.18}
+{'loss': 0.1981, 'learning_rate': 0.0002, 'epoch': 61.25}
+{'loss': 0.1231, 'learning_rate': 0.0002, 'epoch': 61.33}
+{'loss': 0.1682, 'learning_rate': 0.0002, 'epoch': 61.41}
+{'loss': 0.2248, 'learning_rate': 0.0002, 'epoch': 61.49}
+{'loss': 0.141, 'learning_rate': 0.0002, 'epoch': 61.56}
+{'loss': 0.1664, 'learning_rate': 0.0002, 'epoch': 61.64}
+{'loss': 0.2092, 'learning_rate': 0.0002, 'epoch': 61.72}
+Saving PEFT checkpoint...
+{'loss': 0.1619, 'learning_rate': 0.0002, 'epoch': 61.79}
+{'loss': 0.1668, 'learning_rate': 0.0002, 'epoch': 61.87}
+{'loss': 0.1995, 'learning_rate': 0.0002, 'epoch': 61.95}
+{'loss': 0.1876, 'learning_rate': 0.0002, 'epoch': 62.03}
+{'loss': 0.1366, 'learning_rate': 0.0002, 'epoch': 62.1}
+{'loss': 0.1683, 'learning_rate': 0.0002, 'epoch': 62.18}
+{'loss': 0.1955, 'learning_rate': 0.0002, 'epoch': 62.26}
+{'loss': 0.1318, 'learning_rate': 0.0002, 'epoch': 62.33}
+{'loss': 0.1696, 'learning_rate': 0.0002, 'epoch': 62.41}
+{'loss': 0.216, 'learning_rate': 0.0002, 'epoch': 62.49}
+{'loss': 0.1304, 'learning_rate': 0.0002, 'epoch': 62.57}
+{'loss': 0.1632, 'learning_rate': 0.0002, 'epoch': 62.64}
+{'loss': 0.2084, 'learning_rate': 0.0002, 'epoch': 62.72}
+{'loss': 0.1537, 'learning_rate': 0.0002, 'epoch': 62.8}
+{'loss': 0.1585, 'learning_rate': 0.0002, 'epoch': 62.87}
+{'loss': 0.2002, 'learning_rate': 0.0002, 'epoch': 62.95}
+{'loss': 0.1889, 'learning_rate': 0.0002, 'epoch': 63.03}
+{'loss': 0.1346, 'learning_rate': 0.0002, 'epoch': 63.11}
+{'loss': 0.1661, 'learning_rate': 0.0002, 'epoch': 63.18}
+{'loss': 0.1935, 'learning_rate': 0.0002, 'epoch': 63.26}
+{'loss': 0.1347, 'learning_rate': 0.0002, 'epoch': 63.34}
+{'loss': 0.1718, 'learning_rate': 0.0002, 'epoch': 63.41}
+{'loss': 0.2174, 'learning_rate': 0.0002, 'epoch': 63.49}
+{'loss': 0.1274, 'learning_rate': 0.0002, 'epoch': 63.57}
+{'loss': 0.1631, 'learning_rate': 0.0002, 'epoch': 63.65}
+Saving PEFT checkpoint...
+{'loss': 0.214, 'learning_rate': 0.0002, 'epoch': 63.72}
+{'loss': 0.1494, 'learning_rate': 0.0002, 'epoch': 63.8}
+{'loss': 0.1658, 'learning_rate': 0.0002, 'epoch': 63.88}
+{'loss': 0.2032, 'learning_rate': 0.0002, 'epoch': 63.95}
+{'loss': 0.1739, 'learning_rate': 0.0002, 'epoch': 64.03}
+{'loss': 0.1335, 'learning_rate': 0.0002, 'epoch': 64.11}
+{'loss': 0.1715, 'learning_rate': 0.0002, 'epoch': 64.19}
+{'loss': 0.1966, 'learning_rate': 0.0002, 'epoch': 64.26}
+{'loss': 0.1303, 'learning_rate': 0.0002, 'epoch': 64.34}
+{'loss': 0.1717, 'learning_rate': 0.0002, 'epoch': 64.42}
+{'loss': 0.2176, 'learning_rate': 0.0002, 'epoch': 64.49}
+{'loss': 0.1258, 'learning_rate': 0.0002, 'epoch': 64.57}
+{'loss': 0.1736, 'learning_rate': 0.0002, 'epoch': 64.65}
+{'loss': 0.2188, 'learning_rate': 0.0002, 'epoch': 64.73}
+{'loss': 0.149, 'learning_rate': 0.0002, 'epoch': 64.8}
+{'loss': 0.165, 'learning_rate': 0.0002, 'epoch': 64.88}
+{'loss': 0.2024, 'learning_rate': 0.0002, 'epoch': 64.96}
+{'loss': 0.1783, 'learning_rate': 0.0002, 'epoch': 65.03}
+{'loss': 0.1328, 'learning_rate': 0.0002, 'epoch': 65.11}
+{'loss': 0.1756, 'learning_rate': 0.0002, 'epoch': 65.19}
+{'loss': 0.1851, 'learning_rate': 0.0002, 'epoch': 65.27}
+{'loss': 0.1372, 'learning_rate': 0.0002, 'epoch': 65.34}
+{'loss': 0.1812, 'learning_rate': 0.0002, 'epoch': 65.42}
+{'loss': 0.2141, 'learning_rate': 0.0002, 'epoch': 65.5}
+{'loss': 0.1247, 'learning_rate': 0.0002, 'epoch': 65.57}
+Saving PEFT checkpoint...
+{'loss': 0.1676, 'learning_rate': 0.0002, 'epoch': 65.65}
+{'loss': 0.2128, 'learning_rate': 0.0002, 'epoch': 65.73}
+{'loss': 0.1451, 'learning_rate': 0.0002, 'epoch': 65.81}
+{'loss': 0.1642, 'learning_rate': 0.0002, 'epoch': 65.88}
+{'loss': 0.2095, 'learning_rate': 0.0002, 'epoch': 65.96}
+{'loss': 0.1682, 'learning_rate': 0.0002, 'epoch': 66.04}
+{'loss': 0.1351, 'learning_rate': 0.0002, 'epoch': 66.11}
+{'loss': 0.1747, 'learning_rate': 0.0002, 'epoch': 66.19}
+{'loss': 0.191, 'learning_rate': 0.0002, 'epoch': 66.27}
+{'loss': 0.1372, 'learning_rate': 0.0002, 'epoch': 66.35}
+{'loss': 0.1826, 'learning_rate': 0.0002, 'epoch': 66.42}
+{'loss': 0.2151, 'learning_rate': 0.0002, 'epoch': 66.5}
+{'loss': 0.1303, 'learning_rate': 0.0002, 'epoch': 66.58}
+{'loss': 0.1712, 'learning_rate': 0.0002, 'epoch': 66.65}
+{'loss': 0.2172, 'learning_rate': 0.0002, 'epoch': 66.73}
+{'loss': 0.1393, 'learning_rate': 0.0002, 'epoch': 66.81}
+{'loss': 0.1708, 'learning_rate': 0.0002, 'epoch': 66.89}
+{'loss': 0.2089, 'learning_rate': 0.0002, 'epoch': 66.96}
+{'loss': 0.1592, 'learning_rate': 0.0002, 'epoch': 67.04}
+{'loss': 0.1434, 'learning_rate': 0.0002, 'epoch': 67.12}
+{'loss': 0.1778, 'learning_rate': 0.0002, 'epoch': 67.19}
+{'loss': 0.1926, 'learning_rate': 0.0002, 'epoch': 67.27}
+{'loss': 0.1368, 'learning_rate': 0.0002, 'epoch': 67.35}
+{'loss': 0.1774, 'learning_rate': 0.0002, 'epoch': 67.43}
+{'loss': 0.2114, 'learning_rate': 0.0002, 'epoch': 67.5}
+Saving PEFT checkpoint...
+{'loss': 0.1326, 'learning_rate': 0.0002, 'epoch': 67.58}
+{'loss': 0.1754, 'learning_rate': 0.0002, 'epoch': 67.66}
+{'loss': 0.2252, 'learning_rate': 0.0002, 'epoch': 67.73}
+{'loss': 0.1388, 'learning_rate': 0.0002, 'epoch': 67.81}
+{'loss': 0.1649, 'learning_rate': 0.0002, 'epoch': 67.89}
+{'loss': 0.2091, 'learning_rate': 0.0002, 'epoch': 67.97}
+{'loss': 0.1551, 'learning_rate': 0.0002, 'epoch': 68.04}
+{'loss': 0.1393, 'learning_rate': 0.0002, 'epoch': 68.12}
+{'loss': 0.1806, 'learning_rate': 0.0002, 'epoch': 68.2}
+{'loss': 0.1789, 'learning_rate': 0.0002, 'epoch': 68.27}
+{'loss': 0.1437, 'learning_rate': 0.0002, 'epoch': 68.35}
+{'loss': 0.1799, 'learning_rate': 0.0002, 'epoch': 68.43}
+{'loss': 0.2042, 'learning_rate': 0.0002, 'epoch': 68.51}
+{'loss': 0.1311, 'learning_rate': 0.0002, 'epoch': 68.58}
+{'loss': 0.1725, 'learning_rate': 0.0002, 'epoch': 68.66}
+{'loss': 0.2262, 'learning_rate': 0.0002, 'epoch': 68.74}
+{'loss': 0.1338, 'learning_rate': 0.0002, 'epoch': 68.81}
+{'loss': 0.1707, 'learning_rate': 0.0002, 'epoch': 68.89}
+{'loss': 0.2107, 'learning_rate': 0.0002, 'epoch': 68.97}
+{'loss': 0.1576, 'learning_rate': 0.0002, 'epoch': 69.05}
+{'loss': 0.1432, 'learning_rate': 0.0002, 'epoch': 69.12}
+{'loss': 0.1796, 'learning_rate': 0.0002, 'epoch': 69.2}
+{'loss': 0.1722, 'learning_rate': 0.0002, 'epoch': 69.28}
+{'loss': 0.139, 'learning_rate': 0.0002, 'epoch': 69.35}
+{'loss': 0.1802, 'learning_rate': 0.0002, 'epoch': 69.43}
+Saving PEFT checkpoint...
+{'loss': 0.203, 'learning_rate': 0.0002, 'epoch': 69.51}
+{'loss': 0.1321, 'learning_rate': 0.0002, 'epoch': 69.59}
+{'loss': 0.1742, 'learning_rate': 0.0002, 'epoch': 69.66}
+{'loss': 0.2196, 'learning_rate': 0.0002, 'epoch': 69.74}
+{'loss': 0.1322, 'learning_rate': 0.0002, 'epoch': 69.82}
+{'loss': 0.1719, 'learning_rate': 0.0002, 'epoch': 69.89}
+{'loss': 0.2183, 'learning_rate': 0.0002, 'epoch': 69.97}
+{'loss': 0.1524, 'learning_rate': 0.0002, 'epoch': 70.05}
+{'loss': 0.1417, 'learning_rate': 0.0002, 'epoch': 70.13}
+{'loss': 0.1808, 'learning_rate': 0.0002, 'epoch': 70.2}
+{'loss': 0.1695, 'learning_rate': 0.0002, 'epoch': 70.28}
+{'loss': 0.1392, 'learning_rate': 0.0002, 'epoch': 70.36}
+{'loss': 0.1813, 'learning_rate': 0.0002, 'epoch': 70.43}
+{'loss': 0.1923, 'learning_rate': 0.0002, 'epoch': 70.51}
+{'loss': 0.1337, 'learning_rate': 0.0002, 'epoch': 70.59}
+{'loss': 0.1762, 'learning_rate': 0.0002, 'epoch': 70.67}
+{'loss': 0.2236, 'learning_rate': 0.0002, 'epoch': 70.74}
+{'loss': 0.1281, 'learning_rate': 0.0002, 'epoch': 70.82}
+{'loss': 0.1727, 'learning_rate': 0.0002, 'epoch': 70.9}
+{'loss': 0.222, 'learning_rate': 0.0002, 'epoch': 70.97}
+{'loss': 0.1467, 'learning_rate': 0.0002, 'epoch': 71.05}
+{'loss': 0.1455, 'learning_rate': 0.0002, 'epoch': 71.13}
+{'loss': 0.1858, 'learning_rate': 0.0002, 'epoch': 71.21}
+{'loss': 0.1698, 'learning_rate': 0.0002, 'epoch': 71.28}
+{'loss': 0.1393, 'learning_rate': 0.0002, 'epoch': 71.36}
+Saving PEFT checkpoint...
+{'loss': 0.1807, 'learning_rate': 0.0002, 'epoch': 71.44}
+{'loss': 0.1946, 'learning_rate': 0.0002, 'epoch': 71.51}
+{'loss': 0.1356, 'learning_rate': 0.0002, 'epoch': 71.59}
+{'loss': 0.1747, 'learning_rate': 0.0002, 'epoch': 71.67}
+{'loss': 0.217, 'learning_rate': 0.0002, 'epoch': 71.75}
+{'loss': 0.1335, 'learning_rate': 0.0002, 'epoch': 71.82}
+{'loss': 0.1702, 'learning_rate': 0.0002, 'epoch': 71.9}
+{'loss': 0.2192, 'learning_rate': 0.0002, 'epoch': 71.98}
+{'loss': 0.1397, 'learning_rate': 0.0002, 'epoch': 72.05}
+{'loss': 0.1424, 'learning_rate': 0.0002, 'epoch': 72.13}
+{'loss': 0.1777, 'learning_rate': 0.0002, 'epoch': 72.21}
+{'loss': 0.1634, 'learning_rate': 0.0002, 'epoch': 72.29}
+{'loss': 0.1416, 'learning_rate': 0.0002, 'epoch': 72.36}
+{'loss': 0.1858, 'learning_rate': 0.0002, 'epoch': 72.44}
+{'loss': 0.1889, 'learning_rate': 0.0002, 'epoch': 72.52}
+{'loss': 0.1391, 'learning_rate': 0.0002, 'epoch': 72.59}
+{'loss': 0.1725, 'learning_rate': 0.0002, 'epoch': 72.67}
+{'loss': 0.2124, 'learning_rate': 0.0002, 'epoch': 72.75}
+{'loss': 0.1369, 'learning_rate': 0.0002, 'epoch': 72.83}
+{'loss': 0.1753, 'learning_rate': 0.0002, 'epoch': 72.9}
+{'loss': 0.2216, 'learning_rate': 0.0002, 'epoch': 72.98}
+{'loss': 0.1352, 'learning_rate': 0.0002, 'epoch': 73.06}
+{'loss': 0.1422, 'learning_rate': 0.0002, 'epoch': 73.13}
+{'loss': 0.178, 'learning_rate': 0.0002, 'epoch': 73.21}
+{'loss': 0.1626, 'learning_rate': 0.0002, 'epoch': 73.29}
+Saving PEFT checkpoint...
+{'loss': 0.1498, 'learning_rate': 0.0002, 'epoch': 73.37}
+{'loss': 0.1855, 'learning_rate': 0.0002, 'epoch': 73.44}
+{'loss': 0.1815, 'learning_rate': 0.0002, 'epoch': 73.52}
+{'loss': 0.1377, 'learning_rate': 0.0002, 'epoch': 73.6}
+{'loss': 0.1748, 'learning_rate': 0.0002, 'epoch': 73.67}
+{'loss': 0.2162, 'learning_rate': 0.0002, 'epoch': 73.75}
+{'loss': 0.1365, 'learning_rate': 0.0002, 'epoch': 73.83}
+{'loss': 0.1758, 'learning_rate': 0.0002, 'epoch': 73.91}
+{'loss': 0.2236, 'learning_rate': 0.0002, 'epoch': 73.98}
+{'loss': 0.13, 'learning_rate': 0.0002, 'epoch': 74.06}
+{'loss': 0.1427, 'learning_rate': 0.0002, 'epoch': 74.14}
+{'loss': 0.1842, 'learning_rate': 0.0002, 'epoch': 74.21}
+{'loss': 0.1614, 'learning_rate': 0.0002, 'epoch': 74.29}
+{'loss': 0.146, 'learning_rate': 0.0002, 'epoch': 74.37}
+{'loss': 0.1882, 'learning_rate': 0.0002, 'epoch': 74.45}
+{'loss': 0.1834, 'learning_rate': 0.0002, 'epoch': 74.52}
+{'loss': 0.1434, 'learning_rate': 0.0002, 'epoch': 74.6}
+{'loss': 0.1814, 'learning_rate': 0.0002, 'epoch': 74.68}
+{'loss': 0.2079, 'learning_rate': 0.0002, 'epoch': 74.75}
+{'loss': 0.1439, 'learning_rate': 0.0002, 'epoch': 74.83}
+{'loss': 0.1721, 'learning_rate': 0.0002, 'epoch': 74.91}
+{'loss': 0.2244, 'learning_rate': 0.0002, 'epoch': 74.99}
+{'loss': 0.1263, 'learning_rate': 0.0002, 'epoch': 75.06}
+{'loss': 0.1501, 'learning_rate': 0.0002, 'epoch': 75.14}
+{'loss': 0.1868, 'learning_rate': 0.0002, 'epoch': 75.22}
+Saving PEFT checkpoint...
+{'loss': 0.156, 'learning_rate': 0.0002, 'epoch': 75.29}
+{'loss': 0.1507, 'learning_rate': 0.0002, 'epoch': 75.37}
+{'loss': 0.1881, 'learning_rate': 0.0002, 'epoch': 75.45}
+{'loss': 0.1791, 'learning_rate': 0.0002, 'epoch': 75.53}
+{'loss': 0.1467, 'learning_rate': 0.0002, 'epoch': 75.6}
+{'loss': 0.1799, 'learning_rate': 0.0002, 'epoch': 75.68}
+{'loss': 0.2062, 'learning_rate': 0.0002, 'epoch': 75.76}
+{'loss': 0.1359, 'learning_rate': 0.0002, 'epoch': 75.83}
+{'loss': 0.1762, 'learning_rate': 0.0002, 'epoch': 75.91}
+{'loss': 0.2211, 'learning_rate': 0.0002, 'epoch': 75.99}
+{'loss': 0.1241, 'learning_rate': 0.0002, 'epoch': 76.07}
+{'loss': 0.149, 'learning_rate': 0.0002, 'epoch': 76.14}
+{'loss': 0.189, 'learning_rate': 0.0002, 'epoch': 76.22}
+{'loss': 0.1536, 'learning_rate': 0.0002, 'epoch': 76.3}
+{'loss': 0.1447, 'learning_rate': 0.0002, 'epoch': 76.37}
+{'loss': 0.1899, 'learning_rate': 0.0002, 'epoch': 76.45}
+{'loss': 0.1752, 'learning_rate': 0.0002, 'epoch': 76.53}
+{'loss': 0.1451, 'learning_rate': 0.0002, 'epoch': 76.61}
+{'loss': 0.1919, 'learning_rate': 0.0002, 'epoch': 76.68}
+{'loss': 0.1963, 'learning_rate': 0.0002, 'epoch': 76.76}
+{'loss': 0.1369, 'learning_rate': 0.0002, 'epoch': 76.84}
+{'loss': 0.1734, 'learning_rate': 0.0002, 'epoch': 76.91}
+{'loss': 0.2195, 'learning_rate': 0.0002, 'epoch': 76.99}
+{'loss': 0.1216, 'learning_rate': 0.0002, 'epoch': 77.07}
+{'loss': 0.1459, 'learning_rate': 0.0002, 'epoch': 77.15}
+Saving PEFT checkpoint...
+{'train_runtime': 53423.635, 'train_samples_per_second': 2.995, 'train_steps_per_second': 0.187, 'train_loss': 0.2313325492978096, 'epoch': 77.15}
+Saving PEFT checkpoint...
+***** train metrics *****
+  epoch                    =       77.15
+  train_loss               =      0.2313
+  train_runtime            = 14:50:23.63
+  train_samples_per_second =       2.995
+  train_steps_per_second   =       0.187

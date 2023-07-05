@@ -1,0 +1,14 @@
+  Running command git clone --quiet https://github.com/huggingface/transformers.git /tmp/pip-install-nanyctg7/transformers_be659b28fa96440f8624e102ceaf731d
+  Running command git clone --quiet https://github.com/huggingface/peft.git /tmp/pip-install-nanyctg7/peft_a3529563c4584d5d9348fb4604cb0a01
+  Running command git clone --quiet https://github.com/huggingface/accelerate.git /tmp/pip-install-nanyctg7/accelerate_e7bffe3579f04b1cb46f9429f07e0e64
+/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/bitsandbytes/cuda_setup/main.py:149: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so.11.0'), PosixPath('/home/brc4cb/.conda/envs/falcon_40B/lib/libcudart.so')}.. We'll flip a coin and try one of these, in order to fail forward.
+Either way, this might cause trouble in the future:
+If you get `CUDA error: invalid device function` errors, the above might be the cause and the solution is to make sure only one ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] in the paths that we search based on your env.
+  warn(msg)
+Loading checkpoint shards:   0%|          | 0/9 [00:00<?, ?it/s]Loading checkpoint shards:  11%|█         | 1/9 [00:09<01:17,  9.67s/it]Loading checkpoint shards:  22%|██▏       | 2/9 [00:15<00:53,  7.70s/it]Loading checkpoint shards:  33%|███▎      | 3/9 [00:26<00:52,  8.82s/it]Loading checkpoint shards:  44%|████▍     | 4/9 [00:31<00:38,  7.63s/it]Loading checkpoint shards:  56%|█████▌    | 5/9 [00:37<00:27,  6.97s/it]Loading checkpoint shards:  67%|██████▋   | 6/9 [00:44<00:21,  7.00s/it]Loading checkpoint shards:  78%|███████▊  | 7/9 [00:51<00:13,  6.75s/it]Loading checkpoint shards:  89%|████████▉ | 8/9 [00:57<00:06,  6.74s/it]Loading checkpoint shards: 100%|██████████| 9/9 [01:02<00:00,  6.23s/it]Loading checkpoint shards: 100%|██████████| 9/9 [01:02<00:00,  6.99s/it]
+Traceback (most recent call last):
+  File "/gpfs/gpfs0/project/SDS/research/christ_research/falcon/qlora/generate.py", line 87, in <module>
+    adapter_name = model.load_adapter(adapter_path)
+  File "/home/brc4cb/.conda/envs/falcon_40B/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1630, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'RWForCausalLM' object has no attribute 'load_adapter'
