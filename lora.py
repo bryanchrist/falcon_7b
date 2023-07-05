@@ -47,6 +47,7 @@ lora_config = LoraConfig(
 
 peft_model = get_peft_model(original_model, 
                             lora_config)
+                            
 
 output_dir = f'./peft-training-{str(int(time.time()))}'
 
@@ -75,13 +76,13 @@ tokenizer.save_pretrained(peft_model_path)
 #Load Peft model and generate sample text
 from peft import PeftModel, PeftConfig
 
-peft_model_base = AutoModelForCausalLM.from_pretrained("tiiuae/falcon-7b-instruct", torch_dtype=torch.bfloat16)
+peft_model_base = AutoModelForCausalLM.from_pretrained("tiiuae/falcon-7b-instruct", torch_dtype=torch.bfloat16, trust_remote_code=True)
 tokenizer = AutoTokenizer.from_pretrained("tiiuae/falcon-7b-instruct")
 
 peft_model = PeftModel.from_pretrained(peft_model_base, 
                                        './peft-checkpoint-local/', 
                                        torch_dtype=torch.bfloat16,
-                                       is_trainable=False)
+                                       is_trainable=False).to('cuda')  # Move the model to CUDA device
 pipeline = transformers.pipeline(
     "text-generation",
     model=peft_model,
@@ -95,11 +96,11 @@ for i in range(0,10):
     formatted_prompt = (f"Below is an instruction that describes a task. "
             f"Write a response that appropriately completes the request.\n\n"
             f"### Instruction:\n{prompt}\n\n### Response: ")
+    inputs = tokenizer(formatted_prompt, return_tensors="pt")
+    input_ids = inputs.input_ids.to('cuda')  # Move input_ids tensor to the CUDA device
     sequences = pipeline(
-       formatted_prompt,
+       input_ids=input_ids,
         max_new_tokens = 100,
-        do_sample=True,
-        top_k=10,
         num_return_sequences=1,
         eos_token_id=tokenizer.eos_token_id,
     )

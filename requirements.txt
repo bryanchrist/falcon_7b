@@ -9,3 +9,4 @@ scipy
 sentencepiece==0.1.99
 wandb==0.15.3
 einops
+evaluate==0.4.0

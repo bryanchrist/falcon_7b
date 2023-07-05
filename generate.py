@@ -128,7 +128,7 @@ except EOFError:
 sys.stdin = sys.__stdin__
 
 # Load the adapter weights
-model = PeftModel.from_pretrained(model, adapter_path)
+model = PeftModel.from_pretrained(model, adapter_path, is_trainable= False)
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 
 for i in range(0, 10):
